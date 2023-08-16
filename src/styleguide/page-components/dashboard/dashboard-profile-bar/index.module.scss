@@ -1,0 +1,63 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../mixins.scss";
+
+.profilePicContainer {
+  position: relative;
+}
+
+.avatarContainer {
+  width: 97px;
+  height: 95px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid $white 2px;
+}
+
+.profilePic {
+  width: 100px;
+  height : 100px;
+  color: $white;
+  font-size: 6.25em;
+}
+
+.profilePicEdit {
+  width : 16px;
+  height : 16px;
+  right: 4px;
+  bottom: 7px;
+  z-index: 9;
+  color: $white;
+  cursor: pointer;
+  font-size: 1.5em;
+  position: absolute;
+  border-radius: 50px;
+  padding: 5px 5px 5px 7px;
+  background-color: $yellow;
+}
+
+.userName {
+  color: $white;
+  line-height: 1.43;
+  letter-spacing: 0.28px;
+  font-weight: $font-bold;
+  font-size: responsive-font(14px);
+}
+
+.packageBtn {
+  width: 133px;
+  height: 40px;
+  display: flex;
+  color: $white;
+  padding: 10px 0;
+  margin-top: 7px;
+  align-items: center;
+  border-radius: 22px;
+  letter-spacing: 0.22px;
+  justify-content: center;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(11px);
+  text-decoration: none !important;
+  box-shadow: 0 3px 6px 0 $blackLight;
+}

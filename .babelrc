@@ -1,0 +1,20 @@
+{
+  "presets": ["next/babel"],
+  "plugins": [
+    [
+      "module-resolver",
+      {
+        "root": ["."],
+        "alias": {
+          "@src": "./src/",
+          "@context": "./src/context/",
+          "@lib": "./src/styleguide/lib/",
+          "@styleguide": "./src/styleguide/",
+          "@icons": "./src/styleguide/icons/",
+          "@svg-resources": "./src/styleguide/svg-resources/",
+          "@page-components": "./src/styleguide/page-components/"
+        }
+      }
+    ]
+  ]
+}

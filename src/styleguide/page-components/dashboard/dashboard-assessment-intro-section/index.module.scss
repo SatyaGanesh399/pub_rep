@@ -1,0 +1,101 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.assessmentContainer {
+  margin: 0 auto;
+  max-width: 1366px;
+  text-align: center;
+}
+
+.assessmentHeading {
+  @include underlineHeading(100px);
+
+  line-height: 4.06;
+  margin: 10px 0 20px;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  &:after {
+    bottom: 20px;
+  }
+}
+
+.videoImageContainer {
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.videoImage {
+  width: 643px;
+  height: 329px;
+  border-radius: 20px;
+}
+
+.videoPlayBtn {
+  top: 50%;
+  left: 50%;
+  width: 63px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+}
+
+.videoImageContainer p {
+  width: 85%;
+  color: $black;
+  line-height: 1.31;
+  text-align: center;
+  margin: 23px auto 0;
+  letter-spacing: 0.32px;
+  font-size: responsive-font(16px);
+}
+
+.assessmentNotes {
+  color: $black;
+  margin: 0 auto 30px;
+}
+
+.assessmentNotes h2 {
+  @include underlineHeading(100px);
+
+  margin: 30px 0 10px;
+  line-height: 4.06;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  &:after {
+    bottom: 20px;
+  }
+}
+
+.assessmentNotes p {
+  width: 55%;
+  margin: auto;
+  line-height: 1.67;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+}
+
+.formSubmit {
+  width: 144px;
+  height: 39px;
+  color: $white;
+  border-radius: 26px;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $blackLight;
+  font-size: responsive-font(15px);
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+.videoIframeContainer {
+  overflow: hidden;
+  border-radius: 16px;
+  border: 1px solid $grayLight;
+}

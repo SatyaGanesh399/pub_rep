@@ -1,0 +1,120 @@
+@import "../../../../../font.scss";
+@import "../../../../../color.scss";
+@import "../../../../../mixins.scss";
+
+.heroContainer {
+  height: 432px;
+  background-color: $blueLighter;
+
+  @include tablet {
+    height: 350px;
+  }
+
+  @include mobile {
+    height: 435px;
+  }
+}
+
+.hero1366Container {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 140px;
+  max-width: 1366px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+.heroClipart {
+  width: 400px;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include mobile {
+    order: 1;
+    width: 200px;
+  }
+}
+
+.heroContent {
+  max-width: 600px;
+
+  @include tablet {
+    max-width: 400px;
+  }
+
+  @include mobile {
+    order: 2;
+    text-align: center;
+  }
+}
+
+.heroHeading {
+  color: $yellow;
+  line-height: 1.36;
+  letter-spacing: 0.86px;
+  font-weight: $font-bold;
+  font-size: responsive-font(28px);
+
+  @include mobile {
+    font-size: 18px;
+    padding: 0 35px;
+  }
+}
+
+.heroText {
+  color: $black;
+  margin-top: 20px;
+  line-height: 1.67;
+  margin-bottom: 25px;
+  letter-spacing: 0.36px;
+  font-size: responsive-font(18px);
+
+  @include mobile {
+    font-size: 15px;
+    padding: 0 25px;
+    margin-top: 13px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+  }
+}
+
+.heroBtn {
+  border: none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.27;
+  padding: 10px 20px;
+  border-radius: 100px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

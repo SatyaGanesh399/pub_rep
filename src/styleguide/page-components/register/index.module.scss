@@ -1,0 +1,195 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.eventHeading {
+  @include underlineHeading(80px);
+
+  color: $black;
+  line-height: 1.22;
+  position: relative;
+  letter-spacing: 0.46px;
+  font-weight: $font-bold;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+    margin: 20px 0;
+  }
+}
+
+.registerContainer {
+  display: flex;
+  margin: 0 auto;
+  padding: 0 140px;
+  max-width: 1366px;
+  flex-direction: row;
+  background-color: $white;
+  justify-content: space-between;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+.clipartContainer {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.registerClipart {
+  width: 400px;
+
+  @include tablet {
+    width: 300px;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.clipartContainer1 {
+  height: 100%;
+  display: none;
+  padding: 20px 0;
+  justify-content: center;
+
+  @include mobile {
+    width: 100vw;
+    display: flex;
+    background-color: $blueLighter;
+  }
+}
+
+.registerClipart1 {
+  display: none;
+
+  @include mobile {
+    display: block;
+    width: 250px;
+  }
+}
+
+.registerForm {
+  flex: 1;
+  display: flex;
+  padding: 0 0 35px;
+  text-align: center;
+  height: fit-content;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 0 0 45px;
+  }
+
+  @include mobile {
+    padding: 0 0 45px;
+  }
+}
+
+.formGroup {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+
+  @include tablet {
+    width: 250px;
+  }
+}
+
+.formGroup label {
+  color: $black;
+  text-align: left;
+  line-height: 1.63;
+  margin-bottom: 3px;
+  letter-spacing: 0.32px;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(14px);
+
+  @include tablet {
+    margin-bottom: 7px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.9;
+  }
+}
+
+.formInput {
+  width: 100%;
+  height: 51px;
+  color: $black;
+  padding: 0px 20px !important;
+  border-radius: 6px !important;
+  border: solid 2px $gray !important;
+  font-size: responsive-font(15px) !important;
+
+  &:focus {
+    border: solid 2px #f58862 !important;
+  }
+
+  @include tablet {
+    width: 100%;
+    height: 40px;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 33px;
+    font-size: 15px !important;
+  }
+}
+
+.formInputError {
+  color: $red;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.formSubmit {
+  width: 119px;
+  height: 40px;
+  color: $white;
+  margin-top: 20px;
+  line-height: 1.19;
+  letter-spacing: 0.32px;
+  font-weight: $font-semi-bold;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.formSubmitDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: $black;
+  background-color: $grayDarker;
+  box-shadow: 0 3px 6px 0 $grayDarker;
+}

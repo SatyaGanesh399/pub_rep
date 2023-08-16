@@ -1,0 +1,78 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.reportContainer {
+  display: flex;
+  margin-top: 73px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  @include tablet {
+    margin-top: 50px;
+  }
+
+  @include mobile {
+    margin-top: 50px;
+  }
+}
+
+.reportClipart {
+  width: 333px;
+
+  @include tablet {
+    width: 200px;
+  }
+
+  @include mobile {
+    width: 200px;
+  }
+}
+
+.reportText {
+  color: $cyanDark;
+  margin-top: 40px;
+  line-height: 1.89;
+  letter-spacing: 0.38px;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(19px);
+
+  @include tablet {
+    margin-top: 20px;
+  }
+
+  @include mobile {
+    margin-top: 20px;
+    font-size: 14px;
+  }
+}
+
+.reportBtn {
+  width: 156px;
+  height: 39px;
+  color: $white;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  @include tablet {
+    width: 130px;
+    height: 35px;
+  }
+
+  @include mobile {
+    width: 156px;
+    height: 39px;
+    font-size: 14px;
+  }
+}

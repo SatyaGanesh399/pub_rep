@@ -1,0 +1,285 @@
+@import "../../../../../font.scss";
+@import "../../../../../color.scss";
+@import "../../../../../mixins.scss";
+
+.packsContainer {
+  display: flex;
+  padding: 0 70px;
+  width: 100%;
+  margin: 0 auto 50px;
+  align-items: center;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0;
+  }
+}
+
+.packsHeading {
+  @include underlineHeading(100px);
+  letter-spacing: 0.46px;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+  }
+}
+
+.packsSubHeading {
+  color: $black;
+  line-height: 0.67;
+  text-align: center;
+  letter-spacing: 0.36px;
+  font-size: responsive-font(18px);
+
+  @include mobile {
+    font-size: 15px;
+    margin-top: -20px;
+    padding: 0 50px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+  }
+}
+
+.packs {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 33px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    position: relative;
+  }
+}
+
+.packItem {
+  margin: 10px;
+  width: 320px;
+  height : 550px;
+  text-align: center;
+  border-radius: 12px;
+  padding-bottom: 30px;
+  background-color: $white;
+  box-shadow: 0 3px 10px 0 $blackLight;
+  position: relative;
+
+  @include mobile {
+    width: 100%;
+    margin: 0 38px;
+    border-radius: 20px;
+    box-shadow: 0 3px 6px 0 $blackLight;
+  }
+}
+
+.packItemHide {
+  @include mobile {
+    display: none;
+  }
+}
+
+.packItemHeading {
+  width: 100%;
+  height: 61px;
+  color: $white;
+  padding: 17px 0;
+  line-height: 1.14;
+  letter-spacing: 0.44px;
+  background-color: $cyan;
+  font-weight: $font-semi-bold;
+  border-radius: 12px 12px 0 0;
+  font-size: responsive-font(22px);
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 1.05;
+    letter-spacing: 0.44px;
+  }
+}
+
+.packItemPrice {
+  color: $black;
+  line-height: 2.71;
+  letter-spacing: 0.48px;
+  font-weight: $font-bold;
+  font-size: responsive-font(24px);
+
+  @include mobile {
+    font-size: 22px;
+    line-height: 2.95;
+    letter-spacing: 0.44px;
+  }
+}
+
+.packItemPoints {
+  text-align: left;
+  padding: 0 40px 15px 69px;
+
+  @include mobile {
+    display: flex;
+    padding: 0 30px 15px 50px;
+    flex-direction: column;
+  }
+}
+
+.point {
+  color: $black;
+  margin: 0 0 8px 0;
+  line-height: 1.71;
+  position: relative;
+  letter-spacing: 0.32px;
+  font-weight: $font-regular;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 13px;
+    font-weight: $font-semi-bold;
+    letter-spacing: 0.3px;
+  }
+}
+
+.pointCheckIcon {
+  width : 20px;
+  height : 20px;
+  top: 4px;
+  left: -35px;
+  color: $yellow;
+  position: absolute;
+  font-size: 1.4em !important;
+
+  @include mobile {
+    top: 5px;
+    left: -25px;
+    font-size: 1em !important;
+  }
+}
+
+.subPointText {
+  line-height: 1.71;
+  letter-spacing: 0.28px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.79;
+    letter-spacing: 0.28px;
+  }
+}
+
+.pointDisabled {
+  color: $grayDarker !important;
+}
+.radio {
+  display: inline-flex;
+  cursor: pointer;
+}
+.radioInput {
+  display: none;
+}
+.radioRadio {
+  width: 1em;
+  height: 1em;
+  border: 2px solid $gray;
+  border-radius: 50%;
+  margin-right: 10px;
+  box-sizing: border-box;
+  padding: 1px;
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    background: $yellow;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: transform 0.15s;
+  }
+}
+.radioInput:checked + .radioRadio::after {
+  transform: scale(1);
+}
+.packBuyBtn {
+  width: 83px;
+  height: 39px;
+  color: $white;
+  margin-top: 26px;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $yellowLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: 0.26px;
+  }
+}
+.buyAnchorContainer{
+  width : 100%;
+  position: absolute;
+  bottom : 30px;
+}
+
+.packBuyAnchor {
+  color: $white;
+  cursor: pointer;
+  margin-top: 26px;
+  line-height: 1.27;
+  padding: 11px 29px;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $yellowLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: 0.26px;
+  }
+}
+
+.packsNavigationIcon {
+  height : 30px;
+  width : 30px;
+  top: 50%;
+  color: $yellow;
+  display: none;
+  position: absolute;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.packsNavigationLeft {
+  left: 5px;
+}
+
+.packsNavigationRight {
+  right: 5px;
+}
+
+.packsNavigationHide {
+  display: none;
+}

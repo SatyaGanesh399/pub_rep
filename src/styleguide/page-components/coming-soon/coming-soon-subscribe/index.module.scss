@@ -1,0 +1,91 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../mixins.scss";
+
+.subscribeHeading {
+  letter-spacing: 0.54px;
+  color: $black;
+  font-size: 25px;
+  font-weight: $font-bold;
+  margin-bottom: 30px;
+
+  @include mobile-or-tablet {
+    font-size: 16px;
+  }
+}
+
+.subscribeThanks {
+  color: $black;
+  font-size: 25px;
+  font-weight: $font-semi-bold;
+}
+
+.subscribeInputContainer {
+  display: flex;
+  flex-direction: row;
+
+  @include mobile-or-tablet {
+    width: 100%;
+    justify-content: center;
+  }
+
+  @include desktop {
+    margin-top: 20px;
+  }
+}
+
+.subscribeInput {
+  height: 50px;
+  max-width: 400px;
+  padding: 20px;
+  background: $white 0% 0% no-repeat padding-box;
+  border: 1px solid $gray;
+  border-right-width: 0px;
+  border-radius: 32px 0px 0px 32px;
+  font-size: 17px;
+
+  @include mobile-or-tablet {
+    flex: 1;
+  }
+
+  @include desktop {
+    min-width: 400px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.subscribeBtn {
+  align-self: center;
+  border: solid 1px $yellow;
+  height: 50px;
+  max-width: 150px;
+  background: $yellow;
+  border-radius: 0 32px 32px 0;
+  letter-spacing: 0.4px;
+  color: $white;
+  opacity: 1;
+  font-size: 17px;
+  cursor: pointer;
+
+  @include desktop {
+    min-width: 150px;
+  }
+  &:hover {
+    background: $yellowDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.container {
+  @include mobile-or-tablet {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

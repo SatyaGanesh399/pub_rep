@@ -1,0 +1,148 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.dashboardSideBar {
+  width: 100%;
+  margin: 33px 0 0;
+  overflow-y: scroll;
+}
+
+.dashboardSideBar:hover {
+  padding-right: 1px;
+  @include scrollbars(6px, $yellow, $white);
+}
+
+.dashboardSideBtnContainer {
+  transition: 3s background-color ease-in;
+}
+
+.dashboardSideBtn {
+  width: 100%;
+  height: 53px;
+  fill: $white;
+  color: $white;
+  border: none;
+  display: flex;
+  cursor: pointer;
+  line-height: 1.29;
+  padding-right: 20px;
+  align-items: center;
+  letter-spacing: 0.28px;
+  background-color: transparent;
+  font-size: responsive-font(14px);
+  border-left: 7px solid transparent;
+  transition: 0.3s background-color ease-in;
+
+  &:hover {
+    fill: $yellow;
+    color: $yellow;
+    background-color: $whiteDull;
+    font-weight: $font-semi-bold;
+    border-left: 7px solid $yellow;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.activeDashboardSideBtn {
+  fill: $yellow;
+  color: $yellow;
+  background-color: $whiteDull;
+  font-weight: $font-semi-bold;
+  border-left: 7px solid $yellow;
+}
+
+.dashboardSideBtnText {
+  flex: 1;
+}
+
+.dashboardSideBtnClipArt {
+  width: 22px !important;
+  height: 22px !important;
+  margin: 0 10px 0 20px;
+  text-align: center;
+}
+
+.dashboardSubArrow {
+  width : 15px;
+  height : 15px;
+  color: $white;
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+.dashboardSubArrowActive {
+  width : 15px;
+  height : 15px;
+  color: $yellow;
+}
+
+.dashboardSideSubMenu {
+  display: none;
+}
+
+.dashboardSideSubMenuActive {
+  display: flex;
+  padding: 20px 0 10px;
+  flex-direction: column;
+  position: relative;
+
+  &:before {
+    content: "";
+    top: 27px;
+    left: 75px;
+    width: 3px;
+    height: 85%;
+    position: absolute;
+    background-color: $white;
+  }
+}
+
+.dashboardSideSubBtn {
+  width: 100%;
+  height: 35px;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.23;
+  position: relative;
+  letter-spacing: 0.26px;
+  background-color: transparent;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(13px);
+
+  &:focus {
+    outline: none;
+  }
+
+  &:hover {
+    color: $yellow;
+  }
+}
+
+.activeDashboardSideSubBtn {
+  &:after {
+    content: "";
+    top: 6px;
+    left: 75px;
+    width: 3px;
+    height: 25px;
+    position: absolute;
+    background-color: $yellow;
+  }
+}
+.iconlock{
+  width : 12px;
+  height : 12px;
+  margin : 5px;
+}
+.lockOpen{
+  color : $green;
+}
+.lockClose{
+  color : $red;
+}

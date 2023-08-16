@@ -1,0 +1,10 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+@import "../../../../mixins.scss";
+
+.timerContainer {
+  color: $black;
+  display: block;
+  font-weight: $font-bold;
+  font-size: responsive-font(22px);
+}

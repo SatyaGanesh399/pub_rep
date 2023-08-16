@@ -1,0 +1,288 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.sectionDiv {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1366px;
+  text-align: center;
+  flex-direction: row;
+}
+
+.profileInfograph {
+  width: 289px;
+  height: 314px;
+  display: flex;
+  padding: 20px 30px 0;
+  margin-top: 36px;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  align-self: flex-start;
+  background-color: $whiteDull;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+.mandatoryDOB{
+  color: $red;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: responsive-font(14px);
+  margin-top: -15px;
+  margin-bottom : 5px;
+
+  @include mobile {
+    margin-left: 15px;
+    font-size: 11px;
+  }
+}
+.profileClipart {
+  width: 350px;
+  margin-bottom: -25px;
+}
+
+.profileUser {
+  text-align: center;
+}
+
+.profileUserText {
+  color: $yellow;
+  line-height: 2;
+  letter-spacing: 0.48px;
+  font-weight: $font-semi-regular;
+  font-size: responsive-font(24px);
+}
+
+.profileText {
+  line-height: 1.6;
+  color: $blackDark;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+}
+
+.form {
+  flex: 1;
+  margin-right: 80px;
+
+  @include tablet {
+    margin: 0;
+    margin-bottom: 20px;
+  }
+
+  @include mobile {
+    margin: 0;
+    margin-top: -20px;
+    margin-bottom: 20px;
+  }
+}
+
+.formContent {
+  display: flex;
+  margin: 20px auto 0;
+  justify-content: space-between;
+  align-items: center;
+
+  @include tablet {
+    width: 80%;
+  }
+
+  @include mobile {
+    width: 70%;
+    margin-top: 35px;
+    flex-direction: column;
+  }
+}
+
+.formColumn {
+  flex: 1;
+
+  &:nth-of-type(1) {
+    margin-right: 60px;
+  }
+
+  @include mobile {
+    width: 100%;
+
+    &:nth-of-type(1) {
+      margin-right: 0;
+    }
+  }
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  color: $black;
+  text-align: left;
+  line-height: 1.63;
+  margin-bottom: 3px;
+  letter-spacing: 0.32px;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(14px);
+
+  @include tablet {
+    margin-bottom: 7px;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.9;
+    margin-bottom: 10px;
+  }
+}
+
+.formInput {
+  width: 100%;
+  height: 51px;
+  color: $black;
+  padding: 0px 20px !important;
+  border-radius: 6px !important;
+  border: solid 2px $gray !important;
+  font-size: responsive-font(15px) !important;
+
+  &:focus {
+    border: solid 2px #f58862 !important;
+  }
+
+  @include tablet {
+    width: 100%;
+    height: 40px;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 33px;
+    font-size: 13px !important;
+  }
+}
+
+.formInputError {
+  color: $red;
+  text-align: left;
+  letter-spacing: 0.5px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    margin-left: 15px;
+    font-size: 11px;
+  }
+}
+
+.formSubmit {
+  width: 100px;
+  height: 40px;
+  color: $white;
+  margin-top: 20px;
+  line-height: 1.19;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.formSubmitDisabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+  color: $black;
+  background-color: $grayDarker;
+  box-shadow: 0 3px 6px 0 $grayDarker;
+}
+
+.radioGroup {
+  display: flex;
+  flex-direction: row;
+}
+
+.radioContainer {
+  color: $black;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.34px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: responsive-font(15px);
+
+  &:nth-last-child(1) {
+    margin-left: 20px;
+  }
+}
+
+.radioContainerDisabled {
+  pointer-events: none;
+
+  .radioCheckmark {
+    opacity: 0.6;
+  }
+}
+
+.radioContainer input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.radioCheckmark {
+  top: 2px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  border: solid $yellow 1px;
+}
+
+.radioContainer:hover input ~ .radioCheckmark {
+  background-color: $yellowLight;
+}
+
+.radioCheckmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+}
+
+.radioContainer input:checked ~ .radioCheckmark:after {
+  display: block;
+}
+
+.radioContainer .radioCheckmark:after {
+  top: 2px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: $yellow;
+}
+
+.radioContainerDisabled {
+  pointer-events: none;
+
+  .radioCheckmark {
+    opacity: 0.6;
+  }
+}

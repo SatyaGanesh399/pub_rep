@@ -1,0 +1,66 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.privacyContainer {
+  display: flex;
+  padding: 0 140px;
+  max-width: 1366px;
+  margin: 0 auto 50px;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0 30px 0 30px;
+  }
+}
+
+.contentContainer {
+  margin: 0;
+}
+
+.privacyHeading {
+  @include underlineHeading(100px);
+  letter-spacing: 0.46px;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+  }
+}
+
+.privacySubHeading {
+  line-height: 1.75;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.privacyContentHeading {
+  line-height: 2.88;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.privacyContentHeading li {
+  line-height: 1.75;
+  letter-spacing: 0.32px;
+  font-weight: $font-regular;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

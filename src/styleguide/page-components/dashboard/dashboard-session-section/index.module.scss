@@ -1,0 +1,380 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../mixins.scss";
+
+.sessionContainer {
+  margin-top: 37px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: flex-start;
+
+  @include tablet {
+    align-items: center;
+  }
+
+  @include mobile {
+    margin: 0 34px 30px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    background-color: $white;
+    box-shadow: 0 3px 6px 0 $blackLight;
+  }
+}
+
+.navigationIcon {
+  width : 30px;
+  height : 30px;
+  display: none;
+  color: $yellow;
+  position: absolute;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.navigationLeftIcon {
+  left: -25px;
+  top: 40%;
+}
+
+.navigationRightIcon {
+  right: -25px;
+  top: 40%;
+}
+
+.navigationHideIcon {
+  display: none;
+}
+
+.sessionBlocks {
+  display: flex;
+}
+
+.sessionText {
+  display: none;
+
+  @include mobile {
+    color: $black;
+    display: block;
+    font-size: 15px;
+    line-height: 0.93;
+    text-align: center;
+    margin: 30px 0 15px;
+    letter-spacing: 0.3px;
+    font-weight: $font-semi-bold;
+  }
+}
+
+.sessionBlockBtn {
+  width: 107px;
+  height: 32px;
+  color: $black;
+  line-height: 1.21;
+  margin-right: 10px;
+  border-radius: 18px;
+  letter-spacing: 0.28px;
+  background-color: transparent;
+  font-size: responsive-font(14px);
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  border: solid 1px $yellow !important;
+  font-weight: $font-regular !important;
+
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.activeSessionBlockBtn {
+  color: $white;
+  background-color: $yellow;
+  font-weight: $font-semi-bold !important;
+}
+
+.dateTimeContainer {
+  display: flex;
+  width: 100%;
+  margin-top: 40px;
+  flex-direction: row;
+
+  @include tablet {
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  @include mobile {
+    margin-top: 0;
+    flex-direction: column;
+  }
+}
+
+.dateContainer,
+.timeContainer,
+.modeContainer,
+.addressContainer {
+  display: flex;
+  margin-bottom: 35px;
+  flex-direction: column;
+
+  @include tablet {
+    width: 430px;
+  }
+}
+
+.dateContainerHeader,
+.timeContainerHeader,
+.modeContainerHeader,
+.addressContainerHeader {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.sessionIcon {
+  width : 20px;
+  height : 20px;
+  color: $yellow;
+  font-size: 1.6em !important;
+}
+
+.dateContainer {
+  margin-right: 150px;
+
+  @include tablet {
+    margin-right: 0;
+  }
+
+  @include mobile {
+    margin-right: 0;
+  }
+}
+
+.containerHeaderText {
+  color: $black;
+  line-height: 1.88;
+  margin-left: 13px;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 15px;
+    line-height: 2;
+    letter-spacing: 0.3px;
+  }
+}
+
+.timeBlocks {
+  width: 358px;
+  margin-top: 25px;
+  margin-left: 15px;
+
+  @include tablet {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+    text-align: center;
+  }
+}
+
+.datePicker {
+  margin-top: 25px;
+  margin-left: 15px;
+
+  @include tablet {
+    width: 100%;
+    text-align: left;
+    margin-left: 0;
+  }
+
+  @include mobile {
+    width: 100%;
+    display: flex;
+    margin-left: 0;
+    justify-content: center;
+  }
+}
+
+.slotsText {
+  line-height: 1;
+  position: relative;
+  margin: 10px 0 0 0;
+  letter-spacing: 0.26px;
+  text-align: right !important;
+  font-size: responsive-font(13px);
+
+  &::before {
+    top: 3px;
+    right: 100px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow;
+    position: absolute;
+  }
+
+  @include tablet {
+    margin: 10px 0 0 16px;
+    text-align: left !important;
+
+    &::before {
+      top: 0px;
+      left: -13px;
+    }
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.timeBlockBtn {
+  width: 79px;
+  height: 32px;
+  color: $black;
+  line-height: 1.21;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  letter-spacing: 0.28px;
+  background-color: transparent;
+  font-size: responsive-font(14px);
+  border: solid 1px $yellow !important;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-weight: $font-regular !important;
+
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+  }
+
+  @include mobile {
+    width: 77px;
+    font-size: 14px;
+  }
+}
+
+.activeTimeBlockBtn {
+  color: $white;
+  background-color: $yellow;
+  font-weight: $font-semi-bold !important;
+}
+
+.modeBlocks {
+  margin-top: 25px;
+}
+
+.modeBlockBtn {
+  width: 89px;
+  height: 32px;
+  color: $black;
+  line-height: 1.21;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 18px;
+  letter-spacing: 0.28px;
+  background-color: transparent;
+  font-size: responsive-font(14px);
+  border: solid 1px $yellow !important;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-weight: $font-regular !important;
+
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+  }
+
+  @include mobile {
+    width: 86px;
+    font-size: 14px;
+  }
+}
+
+.activeModeBlockBtn {
+  color: $white;
+  background-color: $yellow;
+  font-weight: $font-semi-bold !important;
+}
+
+.modeText {
+  color: $black;
+  line-height: 1.6;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.modeTextLink {
+  max-width: 250px;
+  overflow: hidden;
+  color: $blueDark;
+  line-height: 1.6;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  text-overflow: ellipsis;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.addressText {
+  margin-top: 16px;
+}
+
+.submitBtn {
+  width: 110px;
+  height: 39px;
+  color: $white;
+  line-height: 1.21;
+  align-self: center;
+  border-radius: 26px;
+  letter-spacing: 0.28px;
+  background-color: $yellow;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-weight: $font-semi-bold !important;
+
+  &:hover {
+    color: $white;
+    background-color: $yellowDark;
+  }
+
+  @include mobile {
+    width: 100px;
+    height: 36px;
+    font-size: 14px;
+  }
+}
+
+.bookedText {
+  color: $black;
+  line-height: 1.6;
+  margin-top: 20px;
+  text-align: center;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 15px;
+    margin-top: 0;
+  }
+}

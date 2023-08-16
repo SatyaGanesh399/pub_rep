@@ -1,0 +1,54 @@
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  background-color: $blackFaded;
+  box-shadow: 0 0 0 9999px $blackFaded;
+}
+
+.modalContainer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 3px 6px 0 $blackLight;
+  background-color: $white;
+  overflow: auto;
+  border-radius: 35px;
+  outline: none;
+
+  @include mobile {
+    border-radius: 10px;
+  }
+}
+
+.modalOpen {
+  display: block;
+}
+
+.modalClose {
+  display: none;
+}
+
+.modalCloseIcon {
+  position: absolute;
+  top: 24px;
+  right: 30px;
+  color: $yellow;
+  font-size: 1.4em;
+  cursor: pointer;
+
+  @include mobile {
+    top: 30px;
+    right: 30px;
+    font-size: 1.1em;
+  }
+}

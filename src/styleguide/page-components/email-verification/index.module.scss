@@ -1,0 +1,45 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+@import "../../../../sizes.scss";
+@import "../../../../mixins.scss";
+
+.container {
+  width: 46%;
+  height: 300px;
+  border-radius: 25px !important;
+  padding: 40px;
+  margin: 11vh 0 5vh 27vw;
+  box-shadow: 0 3px 6px 0 $blackLight;
+  background-color: $white;
+  overflow: auto;
+  border-radius: 35px;
+  outline: none;
+  font-size: 15px;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    width: 80%;
+    margin: 9vh 0 7vh 10vw;
+    border-radius: 10px;
+  }
+
+  @include tablet {
+    width: 56%;
+    margin: 11vh 0 5vh 22vw;
+  }
+}
+
+.accUpdated {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  color: $yellow;
+}
+
+.redirectHome {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}

@@ -1,0 +1,57 @@
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.headerClass {
+  color: $black;
+  background-color: $white;
+}
+
+.headerhiddenDesktopClass {
+  display: none;
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include mobile {
+    display: flex;
+  }
+}
+
+.pageBody {
+  overflow: hidden;
+  min-height: calc(100vh - 314px);
+
+  @include large-desktop {
+    min-height: calc(100vh - 399px);
+  }
+
+  @include tablet {
+    min-height: calc(100vh - 314px);
+  }
+
+  @include mobile {
+    min-height: calc(100vh - 327px);
+  }
+}
+
+//Hero Floater Contact Styles
+.floaterContact {
+  right: 30px;
+  width: 60px;
+  bottom: 30px;
+  height: 60px;
+  z-index: 9999;
+  display: flex;
+  cursor: pointer;
+  position: fixed;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    width: 50px;
+    right: 20px;
+    bottom: 20px;
+    height: 50px;
+  }
+}

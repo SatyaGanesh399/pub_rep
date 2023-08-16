@@ -1,0 +1,120 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+// Category table
+.blogSelectCategory {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  margin-top: 15px;
+  .blogCategoryHeader {
+    position: relative;
+    h1 {
+      font-size: responsive-font(24px);
+      letter-spacing: 0.46px;
+      font-weight: $font-bold;
+      line-height: 1.22;
+      @include mobile {
+        font-size: 17px;
+      }
+    }
+    .blogCategoryHeaderBar {
+      position: absolute;
+      bottom: 20%;
+      left: 12%;
+      width: 80px;
+      height: 2px;
+      background: $yellow;
+    }
+  }
+}
+.selectContainer {
+  width: 400px;
+  height: 100px;
+  margin: 0 auto;
+  padding: 10px 0;
+  @include mobile {
+    width: 300px;
+  }
+}
+
+//Blog section
+
+.blogSection {
+  max-width: 1366px;
+  margin: 0 auto;
+  .blogCardContainer {
+    min-height: 600px;
+    max-width: 1100px;
+    display: grid;
+    margin: 0 auto;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    grid-row-gap: 5rem;
+    grid-column-gap: 20px;
+    padding-bottom: 2rem;
+    @include tablet {
+      max-width: 700px;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-column-gap: 90px;
+    }
+    @include mobile {
+      max-width: 325px;
+      grid-column-gap: 0px;
+      grid-row-gap: 2rem;
+    }
+  }
+}
+
+.blogCard {
+  position: relative;
+  height: 250px;
+  width: 330px;
+  box-shadow: 3px 1px 13px 7px $grayLight;
+  border-radius: 6px;
+  transition: 0.2s;
+  &:hover {
+    transform: scale(1.02);
+  }
+  @include tablet {
+    width: 300px;
+    h1 {
+      font-size: responsive-font(14px);
+    }
+    p {
+      font-size: responsive-font(12px);
+    }
+  }
+  img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px 6px 0px 0px;
+  }
+  h1 {
+    font-size: responsive-font(15px);
+    line-height: 1;
+    margin-left: 6px;
+    color: $black;
+  }
+  p {
+    font-size: responsive-font(12px);
+    line-height: 0;
+    margin-left: 6px;
+    margin-bottom: 8px;
+    color: $grayDarker;
+  }
+  .blogCardCategory {
+    position: absolute;
+    bottom: 60px;
+    right: 0px;
+    color: $white;
+    width: 80.54px;
+    height: 18.18px;
+    text-align: center;
+    font-weight: 500;
+    background: $yellow;
+    border: 2px solid $white;
+    font-size: 10px;
+  }
+}

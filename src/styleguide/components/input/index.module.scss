@@ -1,0 +1,23 @@
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.inputClass {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-bottom: 12px;
+  font-family: "Montserrat", sans-serif;
+
+  &::placeholder {
+    color: $blackFaded;
+  }
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+.inputClassReadonly {
+  background-color: $blackLight;
+  cursor: not-allowed;
+}

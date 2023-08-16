@@ -1,0 +1,26 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+
+.adminTable {
+  width: 100%;
+}
+
+.adminTableHead {
+  color: $black;
+  padding: 15px;
+  font-weight: $font-bold;
+  background-color: $blueLight;
+  border-bottom: solid 2px $red;
+}
+
+.adminTableCell {
+  padding: 10px;
+  text-align: center;
+  background: $yellowLight;
+  border: solid 1px $grayLight;
+}
+.downloadIcon{
+  width : 30px;
+  height : 30px;
+  color : $black;
+}

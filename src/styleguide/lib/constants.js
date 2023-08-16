@@ -1,0 +1,15 @@
+export const CONTACT_PHONE_NUMBER = "+91 8920340443";
+export const CONTACT_EMAIL = "info@progarten.in";
+export const CONTACT_ADDRESS = "C-140, Sector 63, Noida, 201301";
+export const HEADER_SERVICES_TITLE = "Services";
+export const HEADER_SERVICES_STUDENTS_TITLE = "Students";
+export const HEADER_SERVICES_INSTITUTION_TITLE = "Institution";
+export const HEADER_CAREER_TITLE = "Resources";
+export const HEADER_CAREER_GUIDE_TITLE = "Career Guides";
+export const HEADER_CAREER_BLOGS_TITLE = "Career Blogs";
+export const HEADER_CAREER_VIDEOS_TITLE = "Career Videos";
+export const HEADER_EVENTS_TITLE = "Upcoming Events";
+export const FOOTER_ABOUT_TITLE = "About Us";
+export const FOOTER_CONTACT_TITLE = "Contact Us";
+export const FOOTER_TERMS_TITLE = "Terms & Conditions";
+export const FOOTER_PRIVACY_TITLE = "Privacy policy";

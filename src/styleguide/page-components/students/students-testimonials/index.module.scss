@@ -1,0 +1,169 @@
+@import "../../../../../color.scss";
+@import "../../../../../mixins.scss";
+@import "../../../../../font.scss";
+//Promo Section Styles
+.promoSection {
+  margin: 0 auto;
+  padding: 0 0 0;
+  max-width: 1366px;
+  background-color: $white;
+
+  @include mobile {
+    margin: 0 20px;
+  }
+}
+
+.promoHeading {
+  @include underlineHeading(80px);
+
+  color: $black;
+  line-height: 1.22;
+  position: relative;
+  letter-spacing: 0.46px;
+  font-weight: $font-bold;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+//Media Section styles
+.mediaSection {
+  margin: 40px 140px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin: 40px 60px 0;
+  }
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.mediaAsset {
+  width: 250px;
+
+  @include large-desktop {
+    width: 300px;
+  }
+
+  @include desktop {
+    width: 250px;
+  }
+
+  @include tablet {
+    width: 180px;
+  }
+
+  @include mobile {
+    width: 130px;
+  }
+}
+
+//Testimonial Slider
+.sliderTestimonialContainer {
+  margin: 50px 140px 25px;
+  padding: 0 0 70px;
+  overflow: hidden;
+  position: relative;
+
+  @include tablet {
+    margin: 50px 60px 25px;
+  }
+
+  @include mobile {
+    margin: 35px auto 30px;
+    padding: 0;
+    overflow-x: scroll;
+  }
+}
+
+.slideTestimonialContainer {
+  width: 429px;
+  height: 180px;
+  padding: 30px;
+  margin: 0 25px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 $blackLight;
+  background-color: $grayLight;
+
+  @include tablet {
+    height: 150px;
+  }
+
+  @include mobile {
+    padding: 20px 10px;
+    margin: 0 25px 0 0;
+    width: 335px;
+    height: 150px;
+  }
+}
+
+.slideTestimonialContent {
+  text-align: left;
+  margin-left: 23px;
+
+  @include mobile {
+    margin-left: 10px;
+  }
+}
+
+.slideTestimonialImage {
+  width: 98px;
+
+  @include tablet {
+    width: 75px;
+  }
+
+  @include mobile {
+    width: 84px;
+  }
+}
+
+.slideTestimonialIcon {
+  color: $gray;
+  width: 310px !important;
+
+  @include tablet {
+    width: 190px !important;
+  }
+
+  @include mobile {
+    width: 276px !important;
+  }
+}
+
+.slideTestimonialHeading {
+  color: $yellow;
+  font-weight: $font-bold;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.slideTestimonialText {
+  color: $black;
+  margin-top: -5px;
+  line-height: 1.79;
+  letter-spacing: 0.28px;
+  width: 230px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.26px;
+  }
+}

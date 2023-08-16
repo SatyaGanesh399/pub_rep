@@ -1,0 +1,52 @@
+@import "../../../../../mixins.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../color.scss";
+
+.enquiryText {
+  color: $yellow;
+}
+
+.modalContainer {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px;
+
+  @include mobile {
+    max-height: 500px;
+    min-width: 275px;
+  }
+
+  @include tablet {
+    min-width: 500px;
+  }
+}
+
+.contactContainer {
+  padding: 15px;
+  flex: 60%;
+
+  @include mobile {
+    flex: 100%;
+  }
+}
+
+// .modalBackground {
+//   background-position-x: left;
+//   background-repeat: no-repeat;
+//   background-image: url("/assets/images/landing_modal_bg.svg");
+// }
+
+.featureContainer {
+  flex: 40%;
+  float: right;
+  line-height: 1.5;
+
+  @include mobile {
+    flex: 100%;
+  }
+}
+
+.featureTitle {
+  margin-left: 20px;
+}

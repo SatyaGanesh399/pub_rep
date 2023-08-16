@@ -1,0 +1,661 @@
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+@import "../../../../font.scss";
+
+// Home Hero Styles
+.heroContainer {
+  height: 526px;
+  background-color: $blueLighter;
+
+  @include tablet {
+    height: 400px;
+  }
+
+  @include mobile {
+    height: 435px;
+  }
+}
+
+.hero1366Container {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  padding: 0 140px;
+  max-width: 1366px;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+  }
+}
+
+.heroClipart {
+  width: 500px;
+
+  @include tablet {
+    width: 400px;
+  }
+
+  @include mobile {
+    order: 1;
+    width: 200px;
+  }
+}
+
+.heroContent {
+  max-width: 600px;
+
+  @include tablet {
+    max-width: 400px;
+  }
+
+  @include mobile {
+    order: 2;
+    text-align: center;
+  }
+}
+
+.heroHeading {
+  color: $yellow;
+  line-height: 1.36;
+  letter-spacing: 0.86px;
+  font-weight: $font-bold;
+  font-size: responsive-font(28px);
+
+  @include mobile {
+    font-size: 18px;
+    padding: 0 35px;
+  }
+}
+
+.heroText {
+  color: $black;
+  margin-top: 20px;
+  line-height: 1.67;
+  margin-bottom: 25px;
+  letter-spacing: 0.36px;
+  font-size: responsive-font(18px);
+
+  @include mobile {
+    font-size: 15px;
+    padding: 0 25px;
+    margin-top: 13px;
+    line-height: 1.33;
+    letter-spacing: 0.3px;
+  }
+}
+
+.heroBtn {
+  border: none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.27;
+  padding: 10px 20px;
+  border-radius: 100px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+  }
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+// Home Info Styles
+.infoContainer {
+  height: 555px;
+  padding: 75px 160px;
+  background-image: url("/assets/images/home_info_bg.svg");
+
+  @include tablet {
+    height: 475px;
+    padding: 50px 60px;
+  }
+
+  @include mobile {
+    height: 650px;
+    padding: 36px 20px;
+  }
+}
+
+.infoSectionHeading {
+  @include underlineHeading(70px);
+  margin: 0 0 30px;
+  letter-spacing: 0.46px;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(23px);
+  margin-bottom: 50px;
+  @include mobile {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+.infoContent {
+  height: 100%;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1366px;
+  flex-direction: row;
+  border-radius: 25px;
+  background-color: $white;
+  box-shadow: 0 2px 2px 0 $blackLight;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.infoSection {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  padding: 40px 70px;
+  border-radius: 25px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &:nth-child(1) {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-right: solid 1px $yellow;
+  }
+
+  @include tablet {
+    padding: 40px 30px;
+  }
+
+  @include mobile {
+    padding: 20px 12px;
+
+    &:nth-child(1) {
+      border-right: none;
+      border-bottom-left-radius: 0;
+      border-bottom: solid 1px $yellow;
+    }
+  }
+}
+
+.infoHeading {
+  color: $black;
+  line-height: 2.2;
+  letter-spacing: 0.4px;
+  font-weight: $font-bold;
+  font-size: responsive-font(20px);
+
+  @include mobile {
+    font-size: 15px;
+    line-height: 1;
+    letter-spacing: 0.3px;
+  }
+}
+
+.infoClipartStudent {
+  width: 52px;
+
+  @include mobile {
+    width: 50px;
+  }
+}
+
+.infoClipartInstitute {
+  width: 69px;
+
+  @include mobile {
+    width: 45px;
+  }
+}
+
+.infoText {
+  line-height: 1.56;
+  letter-spacing: 0.32px;
+  text-align: center;
+  font-size: responsive-font(16px);
+
+  @include large-desktop {
+  }
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.26px;
+  }
+}
+
+.infoText2 {
+  margin-top: -10px;
+}
+
+.infoBtn {
+  border: none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.27;
+  padding: 10px 25px;
+  border-radius: 100px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  font-weight: $font-bold;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.24px;
+  }
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//Promo Section Styles
+.promoSection {
+  margin: 0 auto;
+  padding: 0 0 0;
+  max-width: 1366px;
+  background-color: $white;
+
+  @include mobile {
+    margin: 0 20px;
+  }
+}
+
+.promoHeading {
+  @include underlineHeading(80px);
+
+  color: $black;
+  line-height: 1.22;
+  position: relative;
+  letter-spacing: 0.46px;
+  font-weight: $font-bold;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+}
+
+//Media Section styles
+.mediaSection {
+  margin: 40px 140px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  @include tablet {
+    margin: 40px 60px 0;
+  }
+
+  @include mobile {
+    margin: 0;
+  }
+}
+
+.mediaAsset {
+  width: 250px;
+
+  @include large-desktop {
+    width: 300px;
+  }
+
+  @include desktop {
+    width: 250px;
+  }
+
+  @include tablet {
+    width: 180px;
+  }
+
+  @include mobile {
+    width: 130px;
+  }
+}
+
+//Testimonial Slider
+.sliderTestimonialContainer {
+  margin: 50px 140px 25px;
+  padding: 0 0 70px;
+  overflow: hidden;
+  position: relative;
+
+  @include tablet {
+    margin: 50px 60px 25px;
+  }
+
+  @include mobile {
+    margin: 35px auto 30px;
+    padding: 0;
+    overflow-x: scroll;
+  }
+}
+
+.slideTestimonialContainer {
+  width: 429px;
+  height: 180px;
+  padding: 30px;
+  margin: 0 25px 0 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 $blackLight;
+  background-color: $grayLight;
+
+  @include tablet {
+    height: 150px;
+  }
+
+  @include mobile {
+    padding: 20px 10px;
+    margin: 0 25px 0 0;
+    width: 335px;
+    height: 150px;
+  }
+}
+
+.slideTestimonialContent {
+  text-align: left;
+  margin-left: 23px;
+
+  @include mobile {
+    margin-left: 10px;
+  }
+}
+
+.slideTestimonialImage {
+  width: 98px;
+
+  @include tablet {
+    width: 75px;
+  }
+
+  @include mobile {
+    width: 84px;
+  }
+}
+
+.slideTestimonialIcon {
+  color: $gray;
+  width: 310px !important;
+
+  @include tablet {
+    width: 190px !important;
+  }
+
+  @include mobile {
+    width: 276px !important;
+  }
+}
+
+.slideTestimonialHeading {
+  color: $yellow;
+  font-weight: $font-bold;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.slideTestimonialText {
+  color: $black;
+  margin-top: -5px;
+  line-height: 1.79;
+  letter-spacing: 0.28px;
+  width: 230px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.26px;
+  }
+}
+
+//Blog Slider
+.sliderBlogContainer {
+  margin: 0 140px 25px;
+  padding: 0 25px 15px 0;
+  overflow: hidden;
+  position: relative;
+
+  @include tablet {
+    margin: 0 60px 25px;
+  }
+
+  @include mobile {
+    margin: 0 auto 30px;
+    padding: 0 4px 10px;
+    overflow-x: scroll;
+  }
+}
+
+.slideBlogContainer {
+  margin: 0 41px 0 0;
+  width: 297px;
+  height: 273px;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px 0 $blackLight;
+  background-color: $white;
+
+  @include mobile {
+    width: 227px;
+    height: 227px;
+  }
+}
+
+.slideBlogImage {
+  height: 170px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  @include mobile {
+    height: 128px;
+  }
+}
+
+.slideBlogContent {
+  padding: 0 40px 28px;
+  text-align: center;
+
+  @include mobile {
+    padding: 0 5px;
+  }
+}
+
+.slideBlogHeading {
+  color: $black;
+  letter-spacing: 0.3px;
+  font-weight: $font-bold;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+    letter-spacing: 0.28px;
+  }
+}
+
+.slideBlogText {
+  color: $black;
+  margin-top: -8px;
+  line-height: 1.79;
+  letter-spacing: 0.28px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.54;
+    letter-spacing: 0.26px;
+  }
+}
+
+.slideBlogBtnContainer {
+  text-align: right;
+  margin: 0 140px;
+
+  @include tablet {
+    margin: 0 60px;
+  }
+  @include mobile {
+    margin: -20px 0 0;
+  }
+}
+
+.slideBlogBtn {
+  color: $blue;
+  cursor: pointer;
+  line-height: 1.27;
+  position: relative;
+  padding: 0 15px 0 0;
+  letter-spacing: 0.3px;
+  font-weight: $font-semi-bold;
+  background-color: transparent;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 13px;
+    line-height: 1.23;
+    letter-spacing: 0.26px;
+  }
+
+  &:hover {
+    background-color: transparent;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slideBlogBtnArrow {
+  top: 0;
+  right: 0;
+  position: absolute;
+  font-size: 1.2em !important;
+}
+
+//Videos Slider
+.videoSection {
+  margin-bottom: 100px;
+
+  @include tablet {
+    margin-bottom: 50px;
+  }
+
+  @include mobile {
+    margin-bottom: 50px;
+  }
+}
+
+//Video Slider
+.sliderVideoContainer {
+  margin: 0 140px 25px;
+  padding: 0 25px 70px 0;
+  overflow: hidden;
+  position: relative;
+
+  @include tablet {
+    margin: 0 60px 25px;
+  }
+
+  @include mobile {
+    margin: 0 auto 30px;
+    padding: 0 4px 10px;
+    overflow-x: scroll;
+  }
+}
+
+.slideVideoContainer {
+  margin: 0 41px 0 0;
+  width: 297px;
+  height: 273px;
+  border-radius: 12px;
+  background-color: $white;
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  @include mobile {
+    width: 227px;
+    height: 203px;
+  }
+}
+
+.slideVideoImageContainer {
+  position: relative;
+}
+
+.slideVideoImage {
+  height: 170px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+
+  @include mobile {
+    height: 128px;
+  }
+}
+
+.slideVideoPlayBtn {
+  top: 50%;
+  left: 50%;
+  width: 54px;
+  height: 54px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+
+  @include mobile {
+    width: 31px;
+    height: 31px;
+  }
+}
+
+.slideVideoContent {
+  padding: 15px 35px 10px;
+  text-align: center;
+
+  @include mobile {
+    padding: 0 10px 10px;
+  }
+}
+
+.slideVideoHeading {
+  color: $black;
+  line-height: 1.56;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.28px;
+  }
+}

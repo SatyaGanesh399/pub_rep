@@ -1,0 +1,63 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../mixins.scss";
+
+.profilePicContainer {
+  position: relative;
+}
+
+.avatarContainer {
+  width: 94px;
+  height: 94px;
+  overflow: hidden;
+  border-radius: 50%;
+  border: solid $yellow 2px;
+}
+
+.profilePic {
+  width: 100px;
+  height : 100px;
+  color: $cyan;
+  font-size: 6.25em;
+}
+
+.profileDataContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.userName {
+  color: $black;
+  line-height: 1.77;
+  letter-spacing: 0.26px;
+  font-weight: $font-bold;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.packageBtn {
+  height: 29px;
+  width: 140px;
+  color: $white;
+  display: flex;
+  margin-top: 5px;
+  line-height: 1.2;
+  border-radius: 26px;
+  align-items: center;
+  letter-spacing: 0.24px;
+  justify-content: center;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(12px);
+  text-decoration: none !important;
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  @include mobile {
+    font-size: 12px;
+  }
+}

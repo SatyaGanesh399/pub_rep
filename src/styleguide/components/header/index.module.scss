@@ -1,0 +1,671 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.headerContainer {
+  height: 75px;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 0 140px;
+  position: relative;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  @include tablet {
+    height: 60px;
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    height: 60px;
+    justify-content: center;
+  }
+}
+
+.headerLogo {
+  cursor: pointer;
+  width: 100px;
+
+  @include tablet {
+    width: 80px;
+  }
+
+  @include mobile {
+    width: 72px;
+  }
+}
+
+.headerMenuIcon {
+  cursor: pointer;
+  width :30px;
+  height : 30px;
+  display: none;
+  color: $black;
+
+  @include mobile {
+    top: 14px;
+    left: 16px;
+    display: block;
+    position: absolute;
+  }
+}
+
+.navbar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbarTabs {
+  letter-spacing: 0.36px;
+  font-weight: $font-regular;
+  cursor: pointer;
+  text-decoration: none;
+  color: $black;
+  font-size: responsive-font(15px);
+
+  &:hover {
+    border-bottom: solid 2px $yellow;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.navbarTabs .active {
+  border-bottom: solid 2px $yellow;
+}
+
+.navbarBtn {
+  color: $yellow;
+  cursor: pointer;
+  margin-left: 50px;
+  padding: 8px 25px;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  border: solid 2px $yellow;
+  background-color: transparent;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    display: none;
+  }
+
+  &:hover {
+    color: $white;
+    background-color: $yellow;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+//Header Menu styles
+
+.menuClose {
+  transform: translateX(-100%);
+}
+
+.menuOpen {
+  transform: translateX(0);
+}
+
+.mobileMenuContainer {
+  display: none;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: $white;
+  overflow-y: scroll;
+  margin-bottom: 50px;
+  font-size: 14px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 9999;
+
+  @include mobile {
+    display: block;
+  }
+}
+
+.mobileCloseIcon {
+  cursor: pointer;
+  width : 30px;
+  height : 30px;
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.75em;
+}
+
+.mobileNavbarContainer {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileNavbarTab {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 30px 25px 30px;
+  border-bottom: solid 1px $grayLight;
+  align-items: center;
+
+  &:nth-of-type(1) {
+    height: 150px;
+  }
+
+  &:nth-last-child(1) {
+    padding: 0 30px 25px;
+    border-bottom: none;
+  }
+
+  &:nth-last-child(2) {
+    padding: 20px 30px 20px;
+    border-bottom: none;
+  }
+}
+.mobileNavbarTab1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.mobileNavbarTab2 {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 25px 30px 25px 30px;
+  border-bottom: solid 1px $grayLight;
+}
+
+.mobileNavbarTab3 {
+  display: flex;
+  flex-direction: row;
+  padding: 25px 30px 25px 90px;
+  border-bottom: solid 1px $grayLight;
+  align-items: center;
+}
+
+.mobileNavbarDropIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  color: $yellow;
+}
+
+.mobileHeaderLogo {
+  width: 95px;
+  color: $cyan;
+}
+
+.avatarContainer {
+  width: 97px;
+  height: 95px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-left: -10px;
+  border: solid $yellow 2px;
+}
+
+.mobileUserBox {
+  margin-left: 20px;
+}
+
+.mobileWelcomeUserText {
+  font-size: 15px;
+}
+
+.mobileLoginBtn {
+  width: 113px;
+  height: 40px;
+  border: none;
+  color: $white;
+  cursor: pointer;
+  font-size: 15px;
+  margin-top: 10px;
+  line-height: 1.29;
+  border-radius: 26px;
+  letter-spacing: 0.28px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+
+.mobileNavbarIcon {
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  color: $yellow;
+  margin-right: 20px;
+}
+
+.mobileNavbarTabs {
+  flex: 1;
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  font-weight: $font-regular;
+  text-decoration: none;
+  color: inherit;
+}
+
+//Modal styles
+
+.modalClass {
+  width: 720px;
+  height: 500px;
+  border-radius: 25px !important;
+
+  @include tablet {
+    width: 440px;
+    height: 470px;
+  }
+
+  @include mobile {
+    width: 80%;
+    height: 520px;
+    border-radius: 20px !important;
+  }
+}
+
+.modalContent {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+.modalClipart {
+  width: 280px;
+  display: flex;
+  padding: 10px;
+  text-align: center;
+  flex-direction: column;
+  background-color: $blueLight;
+  justify-content: space-evenly;
+
+  @include tablet {
+    display: none;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.modalForm {
+  color: $black;
+  display: flex;
+  padding: 30px 40px;
+  flex-direction: column;
+  width: calc(720px - 280px);
+
+  @include tablet {
+    width: 100%;
+  }
+
+  @include mobile {
+    width: 100%;
+    padding: 30px 30px 30px;
+  }
+}
+
+.modalHeaderButtons {
+  margin: 0 0 39px;
+
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+
+.modalTabBtn {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  line-height: 1.22 !important;
+  background-color: transparent;
+  padding-bottom: 5px !important;
+  letter-spacing: 0.36px !important;
+  font-size: responsive-font(18px) !important;
+
+  &:nth-of-type(1) {
+    margin-right: 68px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  @include tablet {
+    &:nth-of-type(1) {
+      margin-right: 40px;
+    }
+  }
+
+  @include mobile {
+    font-size: 15px !important;
+    &:nth-of-type(1) {
+      margin-right: 30px;
+    }
+  }
+}
+
+.activeModalTabBtn {
+  @include underlineHeading(60px);
+  font-weight: $font-bold !important;
+  margin: 0;
+
+  @include tablet {
+    @include underlineHeading(50px);
+    margin: 0;
+  }
+
+  @include mobile {
+    @include underlineHeading(50px);
+    margin: 0;
+  }
+}
+
+.modalText {
+  text-align: center;
+  margin: 45px 0 238px 0;
+  font-weight: $font-regular;
+  font-size: 16px;
+  font-family: "Montserrat", sans-serif;
+
+  @include mobile {
+    margin-bottom: 185px;
+    font-size: 15px;
+  }
+
+  @include tablet {
+    margin-bottom: 215px;
+    font-size: 15px;
+  }
+}
+
+.modalSignUpForm {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalSignInForm {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+}
+
+.modalSignInputContainer {
+  margin-bottom: 24px;
+
+  @include mobile {
+    margin-bottom: 20px;
+  }
+}
+
+.modalSignInput {
+  padding: 0 0 11px;
+  line-height: 1.27;
+  letter-spacing: 0.3px;
+  border-bottom: solid 2px $blackLight !important;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.modalSignInputdisable {
+  padding: 5px 0 11px 5px;
+  line-height: 1.27;
+  letter-spacing: 0.3px;
+  border-bottom: solid 2px $blackLight !important;
+  font-size: responsive-font(15px);
+  background-color: rgb(236, 235, 235);
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.modalSignInputError {
+  color: $red;
+  margin-bottom: -13px;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(10px);
+
+  @include tablet {
+    margin-bottom: -10px;
+  }
+
+  @include mobile {
+    font-size: 11px;
+    margin-bottom: -14px;
+  }
+}
+
+.modalFormPassword {
+  position: relative;
+}
+
+.modalFormPasswordIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  right: 0;
+  bottom: 12px;
+  color: $yellow;
+  cursor: pointer;
+  font-size: 1.3em;
+  position: absolute;
+
+  @include mobile {
+    font-size: 1.2em;
+  }
+}
+
+.modalSubmitBtn {
+  width: 113px;
+  height: 36px;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.29;
+  align-self: center;
+  border-radius: 26px;
+  letter-spacing: 0.28px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(14px);
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    margin-top: 15px;
+  }
+}
+
+.modalSubmitBtnDisabled {
+  opacity: 0.5;
+  color: $black;
+  cursor: not-allowed;
+  pointer-events: none;
+  background-color: $grayDarker;
+  box-shadow: 0 3px 6px 0 $grayDarker;
+}
+
+.modalForgetBtn {
+  padding: 0;
+  color: $yellow;
+  margin-top: 10px;
+  line-height: 1.25;
+  align-self: center;
+  width: fit-content;
+  letter-spacing: 0.24px;
+  background: transparent;
+  font-weight: $font-semi-regular;
+  font-size: responsive-font(12px);
+
+  &:hover {
+    text-decoration: underline;
+  }
+
+  @include mobile {
+    font-size: 14px;
+  }
+}
+
+.modalFormBreak {
+  display: flex;
+  margin: 10px 0;
+  text-align: center;
+  justify-content: center;
+}
+
+.modalBreakText {
+  line-height: 1.23;
+  color: $blackFaded;
+  position: relative;
+  letter-spacing: 0.26px;
+  font-size: responsive-font(13px);
+
+  &:before {
+    top: 50%;
+    content: "";
+    width: 120px;
+    left: -140px;
+    position: absolute;
+    border-bottom: solid 1px $blackFaded;
+  }
+
+  &:after {
+    top: 50%;
+    content: "";
+    width: 120px;
+    right: -140px;
+    position: absolute;
+    border-bottom: solid 1px $blackFaded;
+  }
+
+  @include mobile {
+    font-size: 12px;
+
+    &:before {
+      width: 80px;
+      left: -90px;
+    }
+
+    &:after {
+      width: 80px;
+      right: -90px;
+    }
+  }
+}
+
+.modalFooterButtons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.modalFooterButton {
+  width: 173px;
+  height: 42px;
+  display: flex;
+  color: $black;
+  cursor: pointer;
+  line-height: 1.27;
+  text-align: center;
+  border-radius: 21px;
+  flex-direction: row;
+  align-items: center;
+  letter-spacing: 0.3px;
+  justify-content: center;
+  font-weight: $font-bold;
+  border: solid 1px $blueDark;
+  background-color: transparent;
+  font-size: responsive-font(15px);
+
+  &:focus {
+    outline: none;
+  }
+
+  @include mobile {
+    width: 100%;
+    height: 40px;
+    font-size: 15px;
+    &:nth-child(1) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.modalGoogleBtn {
+  color: $googleRed;
+  border: solid 1px $googleRed;
+
+  @include mobile {
+    padding: 8px 17px 8px 0;
+  }
+}
+
+.modalFacebookBtn {
+  color: $facebookBlue;
+  border: solid 1px $facebookBlue;
+}
+
+.modalSocialIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-right: 12px;
+}
+
+.modalGoogleIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.modalFacebookIcon {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  width: 22px;
+  height: 22px;
+}
+
+.facebookBtnText {
+  margin-top: 7px;
+  text-align: center;
+}
+
+.hideFacebookText {
+  display: none;
+}
+
+.showFacebookText {
+  display: block;
+}

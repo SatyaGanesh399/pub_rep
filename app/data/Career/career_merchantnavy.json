@@ -1,0 +1,133 @@
+{
+  "title": "Merchant Navy",
+  "titleImg": "career_merchantnavy.svg",
+  "titleText": "Do you love ships and fantasize about adventures at sea with the opportunity to travel around the world? Navy merchant is a tough but extremely rewarding occupation for individuals who love the sea and the vessels in it, and thus it would be a suitable career choice for you. It is a profession involving trade in various commodities in the form of cargos or tankers through the sea. This profession is an extremely important one as it is the primary method for international trade. It is different from a profession in the navy of countries in the fact that you work for commercial entities instead of governments and are involved in trade instead of working in protecting the country.",
+  "description": "A navy merchant officer is hired for various forms of transport vessels. Since the work involves commercial shipping, they are tasked with sailing the ship with the help of satellites and radars and other necessary apparatus along with ensuring the safety measures present on the ship and regularly maintain the well-functioning of the ship. They are also supposed to regularly analyse information related to the data supplied to them by satellites and other navigation tools along with keeping up to date with various commercial, governmental and nautical matters and to ensure the safety of the crew and the ship. ",
+  "skills": [
+    {
+      "title": "Decision Making Skills",
+      "text": "The job of a navy merchant requires one to make decisions according to the ever-changing conditions of the sea."
+    },
+    {
+      "title": "Teamwork",
+      "text": "One needs to work together with other officers to solve issues due to their complexity."
+    },
+    {
+      "title": "Resourcefulness",
+      "text": "The conditions at the sea are not always ideal and hence one needs to be resourceful in order to complete the jobs."
+    },
+    {
+      "title": "Technical Knowledge",
+      "text": "Working on a ship is a very technical job and requires one to be up to date with the latest development in the technology related to their profession."
+    },
+    {
+      "title": "Analytical Skills",
+      "text": "Working on a ship means analysing loads of information in order to make ideal decisions."
+    }
+  ],
+  "options": {
+    "types": ["Science", "Commerce", "Humanities"],
+    "school": [
+      "Physics, Chemistry, Mathematics and Biology – PCMB, Physics, Chemistry and Mathematics – PCM",
+      "No Option",
+      "No Option"
+    ],
+    "graduation": [
+      "Bachelor of Science (B.Sc.) in Marine Catering, Nautical Science, Bachelor of Technology (B.Tech.) in Marine Engineering",
+      "No Option",
+      "No Option"
+    ],
+    "post": [
+      "Masters of Science (M.Sc.) in Marine Catering, Nautical Science, Masters of Technology (MTech) in Marine Engineering, Masters of Business Administration (MBA) in Shipping and Logistics",
+      "No Option",
+      "No Option"
+    ]
+  },
+  "job": [
+    {
+      "title": "Deck Department",
+      "text": "They are responsible for all the primary work on deck, i.e., maintenance and overlooking of the ship’s deck and judging and maintaining the structural integrity of it along with navigation, monitoring cargo and communications and also ensuring the security of the ship."
+    },
+    {
+      "title": "Engine Department",
+      "text": "They are involved in maintaining the mechanical as well as technical components of the ship such as the engines, communications equipment and ventilation systems."
+    },
+    {
+      "title": "Architecture Department",
+      "text": "They are involved in the designing, construction and repair of the ships and other vessels."
+    },
+    {
+      "title": "Catering Department",
+      "text": "They are responsible for serving meals to the crew and passengers and also for housekeeping. They include chief cooks, trainee cooks and stewards."
+    }
+  ],
+  "personalities": [
+    {
+      "title": "Dr. Subin Vazhayil",
+      "text": "He's based in Calicut , Kerala. He works in various areas including child psychology, clinical psychology and health Psychology."
+    },
+    {
+      "title": "Dr. Kammana Chhibber",
+      "text": "She is a clinical psychologist with over 13 years of experience. She also specialises in marital counselling, pre-marital counselling and family counselling."
+    },
+    {
+      "title": "Dr. Vipul Rastogi",
+      "text": "He is based in Gurgaon, and has an overall of 18 years of experience. He deals with clinical cases mostly, including chronic depression, PTSD, and abnormal behaviour."
+    },
+    {
+      "title": "Dr. Shilpa Aggarwal",
+      "text": "She has trained in this field in Australia as well as India. She has over 20 years of experience. She specialises in child and adolescent psychology."
+    }
+  ],
+  "institute": [
+    {
+      "name": "Indian Maritime Institute",
+      "link": "https://www.imu.edu.in/",
+      "location": "Multlple Locations"
+    },
+    {
+      "name": "International Maritime Institute",
+      "link": "http://www.imi.edu.in/",
+      "location": "Greater Noida"
+    },
+    {
+      "name": "Neotia Institute of Technology Management and Science",
+      "link": "https://www.nitmas.edu.in/",
+      "location": "Kolkata"
+    },
+    {
+      "name": "Delhi Academy of Merchant Navy",
+      "link": "http://www.delhiacademy.in/",
+      "location": "New Delhi"
+    },
+    {
+      "name": "R.L Institute of Nautical Sciences",
+      "link": "http://rlins.edu.in/",
+      "location": "Madhurai"
+    },
+    {
+      "name": "Vels University",
+      "link": "http://www.velsuniv.ac.in/",
+      "location": "Chennai"
+    },
+    {
+      "name": "Haldia Institute of Maritime Science and Research",
+      "link": "http://www.himsar.net/",
+      "location": "West Bengal"
+    },
+    {
+      "name": "Cochin University of Science and Technology",
+      "link": "https://www.cusat.ac.in/",
+      "location": "Cochin"
+    }
+  ],
+  "pros": [
+    "It is a highly esteemed career.",
+    "It is a career with a very lucrative compensation and thus a very attractive prospect.",
+    "One gets substantial leave when not working, usually varying from 4 to 6 months."
+  ],
+  "cons": [
+    "The conditions in the seas are not always favourable thus making it a dangerous profession.",
+    "One has to stay away from their home for long periods of time."
+  ]
+}

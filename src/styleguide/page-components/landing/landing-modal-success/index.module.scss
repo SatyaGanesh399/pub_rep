@@ -1,0 +1,88 @@
+@import "../../../../../mixins.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../color.scss";
+
+.enquiryText {
+  color: $yellow;
+  text-align: center;
+  @include mobile {
+    font-size: 20px;
+  }
+}
+
+.modalContainer {
+  align-items: center;
+  text-align: center;
+  min-width: 800px;
+  padding: 50px;
+
+  @include mobile {
+    max-height: 500px;
+    min-width: 275px;
+    padding: 25px;
+  }
+
+  @include tablet {
+    min-width: 500px;
+  }
+}
+
+.contactContainer {
+  padding: 5px;
+  flex: 60%;
+
+  @include mobile {
+    flex: 100%;
+  }
+}
+
+.homepageLink {
+  text-decoration: underline;
+  margin-top: 40px;
+  font-weight: 700;
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.whatsAppText {
+  font-weight: 500;
+  margin-bottom: 40px;
+  @include mobile {
+    font-size: 14px;
+    font-weight: 100;
+  }
+}
+
+.infoBtn {
+  border: none;
+  color: $white;
+  cursor: pointer;
+  line-height: 1.27;
+  padding: 10px 25px;
+  border-radius: 100px;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  font-weight: $font-bold;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 1.25;
+    letter-spacing: 0.24px;
+  }
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.linkColor {
+  color: $yellow;
+}

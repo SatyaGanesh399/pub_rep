@@ -1,0 +1,76 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.dashboardMobileNavBar {
+  display: none;
+  margin: 120px 0 0;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 100vw;
+  &:before {
+    content: "";
+    display: inline-block;
+    border-radius: 7px;
+    border-bottom: 3px solid #cccccc;
+    width: 420px;
+    margin: 0 0px 0 0;
+    position: absolute;
+    bottom: 0px;
+    white-space: nowrap;
+  }
+
+  @include tablet {
+    display: flex;
+  }
+
+  @include mobile {
+    display: flex;
+    justify-content: center;
+    &:before {
+      width: 355px;
+      margin: 0 0px 0 10px;
+    }
+  }
+}
+
+.dashboardMobileSideBtn {
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: left;
+  line-height: 1.29;
+  margin: 0 10px 0 10px;
+  padding: 0 0 7px 0;
+  white-space: nowrap;
+  font-weight: $font-regular !important;
+  background-color: transparent;
+  @include mobile {
+    margin: 0 3px 0 3px;
+  }
+  &:focus {
+    outline: none;
+  }
+}
+
+.activeDashboardMobileSideBtn {
+  border: none;
+  color: $yellow;
+  font-weight: $font-bold;
+  background-color: transparent;
+  position: relative;
+
+  &:after {
+    left: 0;
+    width: 100%;
+    bottom: 0px;
+    content: "";
+    border-radius: 10px;
+    position: absolute;
+    display: inline-block;
+    border-bottom: 3px solid $yellow;
+  }
+}

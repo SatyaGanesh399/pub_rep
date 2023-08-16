@@ -1,0 +1,193 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.submitContainer {
+  display: flex;
+  margin-top: 73px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.testContainer {
+  display: flex;
+  margin-top: 5px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.reportContainer{
+  width : 90%;
+  margin : 20px auto;
+}
+
+.submitClipart {
+  width: 333px;
+}
+
+.submitText {
+  color: $cyanDark;
+  margin-top: 40px;
+  line-height: 1.89;
+  letter-spacing: 0.38px;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(19px);
+}
+
+.submitBtn {
+  width: 156px;
+  height: 39px;
+  color: $white;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+.resultsBtn {
+  margin-bottom: 20px;
+  width: 156px;
+  height: 39px;
+  color: $white;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+.counsellorBtn {
+  margin-bottom: 20px;
+  width: 250px;
+  height: 39px;
+  color: $white;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+.continueBtn {
+  width: 400px;
+  height: 39px;
+  color: $white;
+  line-height: 1.27;
+  border-radius: 26px;
+  letter-spacing: 0.3px;
+  background-color: $yellow;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  &:hover {
+    background-color: $yellowDark;
+  }
+}
+
+.assessmentNotes {
+  color: $black;
+  margin: 0 auto 30px;
+}
+
+.assessmentNotes h2 {
+  @include underlineHeading(100px);
+
+  margin: 30px 0 10px;
+  line-height: 4.06;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(18px);
+
+  &:after {
+    bottom: 20px;
+  }
+}
+
+.assessmentNotes p {
+  width: 100%;
+  text-align: center;
+  margin: auto;
+  line-height: 1.67;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+}
+
+.barchartContainer {
+  margin-right: 50px;
+  text tspan{
+    fill : black !important;
+  }
+}
+
+.tableContainer {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 95%;
+  border-radius: 5px;
+  border-color: $yellow;
+  margin : 50px auto;
+  td {
+    border: 1px solid $yellow;
+    color: $blackDark;
+    text-align: left;
+    padding: 8px;
+  }
+  th {
+    border: 1px solid $yellow;
+    color: $blackDark;
+    text-align: left;
+    padding: 8px;
+  }
+  tr:nth-child(even) {
+    background-color: $yellowLight;
+  }
+}
+.interestData{
+  width: 100%;
+  height : 100%;
+  margin : 30px auto;
+  div{
+    margin : 10px;
+  }
+  h4{
+    text-align: center;
+    margin : 20px;
+    font-weight: 600;
+    font-size: responsive-font(15px);
+  }
+  p{
+    font-weight: 600;
+    font-size: responsive-font(14px);
+    text-align: left !important;
+    span{
+      color : $yellow;
+    }
+  }
+  ol li{
+    font-size: responsive-font(14px);
+    text-align: justify;
+  }
+}
+
+
+
+
+

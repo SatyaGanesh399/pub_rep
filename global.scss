@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap");
+@import "mixins.scss";
+
+// for chatbot UI
+:root {
+  --df-messenger-button-titlebar-color: #{$yellow};
+  --df-messenger-minimized-chat-close-icon-color: #{$yellow};
+  --df-messenger-user-message: #{$blue};
+  --df-messenger-font-color: #{$white};
+  --df-messenger-bot-message: #{$yellow};
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: "Montserrat", sans-serif;
+
+  font-size: 16px;
+
+  // beyond 1920px;
+  @media (min-width: 1920px) {
+    font-size: 16px;
+  }
+
+  // 1080px
+  @include tablet {
+    font-size: 13px;
+  }
+
+  // 726px
+  @include mobile {
+    font-size: 16px;
+  }
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  text-decoration: none;
+}

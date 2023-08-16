@@ -1,0 +1,93 @@
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+@import "../../../../font.scss";
+
+//SliderContent
+
+.sliderContent {
+  display: flex;
+  transition: transform ease-out 0.45s;
+  height: 100%;
+}
+
+//Slider Arrow Styles
+
+.sliderArrowContainer {
+  top: 25%;
+  color: $yellow;
+  height: 35px;
+  width: 30px;
+  cursor: pointer;
+  display: flex;
+  border-radius: 3px;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  background-color: $white;
+  box-shadow: 0 3px 6px 0 $blackLight;
+  transition: transform ease-in 0.1s;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+
+  &:focus {
+    outline: 0;
+  }
+
+  @include tablet {
+    top: 25%;
+  }
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.slideArrow {
+  width: 12px !important;
+  height: 20.7px;
+}
+
+.sliderArrowLeft {
+  left: 10px;
+  transform: translateX(-2px);
+}
+
+.sliderArrowRight {
+  right: 10px;
+  transform: translateX(2px);
+}
+
+//Slider Dot styles
+
+.sliderDotContainer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.sliderDotStyle {
+  padding: 8px;
+  margin-right: 14px;
+  cursor: pointer;
+  border-radius: 50%;
+  opacity: 0.5;
+  background: $yellow;
+}
+
+.sliderDotActive {
+  opacity: 1;
+  background-color: $yellow;
+}
+
+.aboutusArrowPosition {
+  margin-top: 90px;
+}

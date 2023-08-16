@@ -1,0 +1,97 @@
+@import "sizes.scss";
+@import "font.scss";
+@import "color.scss";
+
+@mixin mobile {
+  @media (max-width: $screen-md - 1) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: $screen-md) and (max-width: $screen-lg - 1) {
+    @content;
+  }
+}
+
+@mixin large-desktop {
+  @media (min-width: $screen-xl) {
+    @content;
+  }
+}
+
+@mixin small-desktop {
+  @media (min-width: $screen-lg) and (max-width: $screen-xl - 1) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin mobile-or-tablet {
+  @media (max-width: $screen-lg - 1) {
+    @content;
+  }
+}
+
+@mixin tablet-or-desktop {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@function responsive-font($size) {
+  $ratio: 1rem/16px;
+  @return $size * $ratio;
+}
+
+@mixin underlineHeading($underlineWidth: 50px) {
+  color: $black;
+  margin: 50px 0;
+  text-align: center;
+  position: relative;
+  letter-spacing: 1px;
+  padding: 0 0 8px 0;
+  font-weight: $font-bold;
+  font-size: responsive-font(23px);
+
+  &::after {
+    content: "";
+    bottom: 0;
+    height: 2px;
+    position: absolute;
+    width: $underlineWidth;
+    background-color: $yellow;
+    left: calc((100% - #{$underlineWidth}) / 2);
+  }
+}
+
+@mixin scrollbars(
+  $size,
+  $foreground-color,
+  $background-color: mix($foreground-color, white, 50%)
+) {
+  // For Google Chrome
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: $background-color;
+  }
+
+  // For Internet Explorer
+  & {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}

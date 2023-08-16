@@ -1,0 +1,177 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../mixins.scss";
+
+.testContainer {
+  max-width: 1366px;
+  text-align: left;
+  position: relative;
+  margin: 50px auto 0;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.testTimerContainer {
+  top: -40px;
+  right: -10px;
+  position: absolute;
+
+  @include mobile {
+    display: none;
+  }
+}
+
+.testContainer h2 {
+  color: $black;
+  font-weight: $font-bold;
+  line-height: 1.18;
+  letter-spacing: 0.34px;
+  font-size: responsive-font(15px);
+}
+
+.question {
+  width: 100%;
+  color: $black;
+  padding: 20px;
+  margin-top: 24px;
+  border-radius: 19px;
+  box-shadow: 0 1px 3px 0 $blackLight;
+  border: solid 1px $yellow;
+}
+
+.questionImagesContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.questionSingleImgContainer {
+  text-align: center;
+}
+.questionSingleImgContainer p {
+  font-weight: $font-bold;
+}
+
+.questionImgreduced {
+  width: 150px;
+}
+
+.questionImgSized {
+  margin-bottom: 10px;
+  width: 250px;
+}
+
+.question p {
+  line-height: 1.76;
+  letter-spacing: 0.34px;
+  font-size: responsive-font(15px);
+}
+
+.questionQuestionNumber {
+  margin-top: 40px;
+}
+
+.questionQuestion {
+  font-weight: $font-bold;
+  margin-bottom: 35px;
+}
+
+.questionAnswer {
+  font-weight: $font-semi-regular;
+  margin-top: 25px;
+}
+
+.radioContainer {
+  color: $black;
+  display: block;
+  cursor: pointer;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 15px;
+  line-height: 1.5;
+  letter-spacing: 0.34px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: responsive-font(15px);
+}
+
+.radioContainerDisabled {
+  pointer-events: none;
+
+  .radioCheckmark {
+    opacity: 0.6;
+  }
+}
+
+.radioContainer input {
+  opacity: 0;
+  cursor: pointer;
+  position: absolute;
+}
+
+.radioCheckmark {
+  top: 0;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border-radius: 50%;
+  position: absolute;
+  border: solid $yellow 1px;
+}
+
+.radioContainer:hover input ~ .radioCheckmark {
+  background-color: $yellowLight;
+}
+
+.radioCheckmark:after {
+  content: "";
+  display: none;
+  position: absolute;
+}
+
+.radioContainer input:checked ~ .radioCheckmark:after {
+  display: block;
+}
+
+.radioContainer .radioCheckmark:after {
+  top: 2px;
+  left: 2px;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: $yellow;
+}
+
+.radioContainerDisabled {
+  pointer-events: none;
+
+  .radioCheckmark {
+    opacity: 0.6;
+  }
+}
+
+.submitContainer {
+  text-align: center;
+}
+
+.formSubmit {
+  width: 150px;
+  height: 40px;
+  color: $white;
+  margin: 50px 0;
+  line-height: 1.19;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  background-color: $yellow;
+  box-shadow: 0 3px 6px 0 $yellowLight;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}

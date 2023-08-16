@@ -1,0 +1,24 @@
+@import "../../../../../color.scss";
+@import "../../../../../font.scss";
+@import "../../../../../mixins.scss";
+
+.footerContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding: 0 150px 50px 0;
+
+  @include mobile-or-tablet {
+    margin-top: 35px;
+    padding: 0 0 50px 0;
+    justify-content: center;
+  }
+}
+
+.footerContent {
+  margin-left: 10px;
+  font-weight: $font-bold;
+  letter-spacing: 0.54px;
+  color: $black;
+}

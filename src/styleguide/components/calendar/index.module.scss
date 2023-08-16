@@ -1,0 +1,159 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+@import "../../../../mixins.scss";
+
+.calendarContainer {
+  width: 350px;
+  min-height: 337px;
+  position: relative;
+  border-radius: 6px;
+  background: $white;
+  padding: 20px 30px 50px;
+  border: solid 1px $yellow;
+  box-shadow: 0 3px 6px 0 $blackLight;
+
+  @include mobile {
+    width: 270px;
+    min-height: 271px;
+    padding: 16px 15px 38px;
+  }
+}
+
+.calendarHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarHeaderText {
+  flex: 1;
+  text-align: center;
+  line-height: 0.81;
+  letter-spacing: 0.32px;
+  font-weight: $font-semi-bold;
+  font-size: responsive(16px);
+
+  @include mobile {
+    font-size: 15px;
+    line-height: 0.69;
+    letter-spacing: 0.26px;
+  }
+}
+
+.calendarHeaderIcon {
+  height : 20px;
+  width : 20px;
+  cursor: pointer;
+  font-size: 1.1em !important;
+  transition: 0.15s ease-out;
+
+  &:hover {
+    transition: 0.25s ease-out;
+    color: $yellow;
+  }
+
+  @include mobile {
+    font-size: 1.3em !important;
+  }
+}
+
+.calendarDaysNamesContainer {
+  display: flex;
+  margin: 23px 0 18px;
+  border-bottom: 1px solid $yellow;
+}
+
+.calendarDaysNamesText {
+  flex: 1;
+  color: $grayDarker;
+  line-height: 0.81;
+  text-align: center;
+  padding-bottom: 10px;
+  letter-spacing: 0.32px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 13px;
+  }
+}
+
+.calendarDaysContainer {
+  display: flex;
+  align-items: center;
+}
+
+.calendarDaysBtn {
+  flex: 1;
+  height: 39px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calendarDaysBtnSelected,
+.calendarDaysBtn:hover {
+  width: 16px;
+  height: 35px;
+  color: $white;
+  border-radius: 50%;
+  background-color: $yellow;
+
+  @include tablet {
+    width: 15px;
+    height: 35px;
+  }
+
+  @include mobile {
+    width: 16px;
+    height: 30px;
+  }
+}
+
+.calendarDaysBtnDisabled {
+  color: $gray;
+  pointer-events: none;
+}
+
+.calendarDaysBtnNumber {
+  line-height: 0.81;
+  letter-spacing: 0.32px;
+  font-weight: $font-regular;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 14px;
+    letter-spacing: 0.3px;
+  }
+}
+
+.slotsText {
+  line-height: 1;
+  position: relative;
+  margin: 20px 0 0 0;
+  letter-spacing: 0.26px;
+  text-align: right !important;
+  font-size: responsive-font(13px);
+
+  &::before {
+    top: 3px;
+    right: 100px;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: $yellow;
+    position: absolute;
+  }
+
+  @include tablet {
+    &::before {
+      top: 0px;
+      right: 85px;
+    }
+  }
+
+  @include mobile {
+    font-size: 13px;
+  }
+}

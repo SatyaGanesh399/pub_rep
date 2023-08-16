@@ -1,0 +1,124 @@
+{
+  "title": "Ethical Hacking",
+  "titleImg": "career_ethicalhacking.svg",
+  "titleText": "Are you passionate about computers and programming? If yes, then ethical hacking is a potential career option for you. Ethical hacking helps identify potential threats on a computer or network. Hackers are computer and networking experts and thus they bypass system security and search for any weak points that could be exploited by malicious hackers. The main purpose of ethical hacking is to improve system security, to minimize or eliminate any potential attacks.",
+  "description": "Ethical hackers or white-hat hackers are security professionals whose job is to find and exploit vulnerabilities and weaknesses in various systems. Work of ethical hackers is legitimate and is done lawfully to try to find vulnerabilities and fix them before the system gets attacked. The primary difference between ethical hackers and real hackers—the legality.",
+  "skills": [
+    {
+      "title": "Coding",
+      "text": "Basics of programming languages like JavaScript, PHP, HTML etc. is required to become a hacker."
+    },
+    {
+      "title": "IT Knowledge",
+      "text": "Hacking is a hardcore IT job which makes it necessary to have IT skills and interest."
+    },
+    {
+      "title": "Networking",
+      "text": "This is the most important skill in hacking. Computer networking and its elements include proxy, VPN, processes like NAT and IP addressing etc."
+    },
+    {
+      "title": "Time Management",
+      "text": "Ethical hacking requires a person with an extreme sense of time management and understanding the value of time."
+    }
+  ],
+  "options": {
+    "types": ["Science", "Commerce", "Humanities"],
+    "school": [
+      "Physics, Chemistry, Mathematics and Biology – PCMB, Physics, Chemistry and Mathematics – PCM",
+      "No Option",
+      "No Option"
+    ],
+    "graduation": [
+      "BSc in Computer Science, BCA, Certification Courses in Ethical Hacking (CEH, CCNA, SCNS, CPTE, CISSP)",
+      "No Option",
+      "No Option"
+    ],
+    "post": [
+      "Certification Courses in Ethical Hacking (CEH, CCNA, SCNS, CPTE, CISSP)",
+      "No Option",
+      "No Option"
+    ]
+  },
+  "job": [
+    {
+      "title": "Network Security Administrator",
+      "text": "They are individuals that manage, monitor and administer security over one or more computer networks."
+    },
+    {
+      "title": "Penetration Tester",
+      "text": "They are security consultants that try to break into or find possible exploits in different computer systems and software."
+    },
+    {
+      "title": "Network Security Engineer",
+      "text": "They are responsible for the provisioning, deployment, configuration, and administration of many different pieces of network and security-related hardware and software."
+    },
+    {
+      "title": "Security Consultant",
+      "text": "They are advisor and supervisor for all security measures necessary to effectively protect a company or client’s assets."
+    }
+  ],
+  "personalities": [
+    {
+      "title": "Kevin Mitnick",
+      "text": "He is an American computer security consultant, author, and a black hat turned white hat hacker."
+    },
+    {
+      "title": "Richard Stallman",
+      "text": "He is an American free software movement activist, software developer, noted hacker, and founder of the GNU Project."
+    },
+    {
+      "title": "Ankit Fadia",
+      "text": "He is an Indian author, speaker, television host, and self-proclaimed WHITE HAT hacker work mostly involves OS and networking based tips and tricks and proxy websites."
+    },
+    {
+      "title": "Charlie Miller",
+      "text": "He is a security researcher, is best known for exposing vulnerabilities in Apple products."
+    },
+    {
+      "title": "Greg Hoglund",
+      "text": "He is a specialist in computer forensics who worked with the U.S. Government and the Intelligence Community, providing his white hat capabilities to the pursuit of justice."
+    }
+  ],
+  "institute": [
+    {
+      "name": "Indian School of Ethical Hacking (ISOEH)",
+      "link": "https://www.isoeh.com/",
+      "location": "Kolkata"
+    },
+    {
+      "name": "EC Council",
+      "link": "https://www.eccouncil.org/",
+      "location": "Multiple Locations"
+    },
+    {
+      "name": "Institute of Ethical Hacking and Forensics",
+      "link": "https://www.isoeh.com/isoeh-bhubaneswar.html",
+      "location": "Odisha"
+    },
+    {
+      "name": "Institute of Information Security",
+      "link": "https://www.iisecurity.in/trainings.php",
+      "location": "Multiple Locations"
+    },
+    {
+      "name": "Arizona Infotech",
+      "link": "http://www.arizonainfotech.com/",
+      "location": "Pune"
+    },
+    {
+      "name": "Quest Institute of Knowledge (QUIK)",
+      "link": "https://www.quiknowledge.net/",
+      "location": "Mumbai"
+    }
+  ],
+  "pros": [
+    "Due to the increase in cyber-crime, there is an increase in demand for ethical hackers.",
+    "There is high earning potential because of high demand.",
+    "One gets to help in the fight against cyber-crimes."
+  ],
+  "cons": [
+    "One needs to maintain strong ethics.",
+    "The part-time option is usually available in this field.",
+    "It is not very interactive work."
+  ]
+}

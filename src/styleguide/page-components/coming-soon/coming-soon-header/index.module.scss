@@ -1,0 +1,30 @@
+@import "../../../../../mixins.scss";
+
+.headerContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 140px;
+  height: 100px;
+  width: 100%;
+  max-width: 1366px;
+  margin: 0 auto;
+
+  @include mobile-or-tablet {
+    padding: 0;
+  }
+}
+
+.headerLogo {
+  width: 110px;
+}
+
+.headerSocial {
+  display: flex;
+  align-items: center;
+}
+
+.headerTab {
+  margin: 0 4px;
+}

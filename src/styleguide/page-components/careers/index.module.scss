@@ -1,0 +1,30 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.selectContainer {
+  width: 400px;
+  height: 350px;
+  margin: 0 auto;
+  padding-top: 45px;
+
+  @include mobile {
+    width: 300px;
+  }
+}
+
+.careerHeading {
+  @include underlineHeading(80px);
+
+  color: $black;
+  line-height: 1.22;
+  margin-bottom: -20px;
+  position: relative;
+  letter-spacing: 0.46px;
+  font-weight: $font-bold;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+  }
+}

@@ -1,0 +1,14 @@
+@import "../../../../../mixins.scss";
+@import "../../../../../sizes.scss";
+@import "../../../../../color.scss";
+
+.landingFooter {
+  background-color: $white;
+  float: right;
+  margin-right: 10%;
+  margin-top: 7%;
+
+  @include mobile {
+    display: none;
+  }
+}

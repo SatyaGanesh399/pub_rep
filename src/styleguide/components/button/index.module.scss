@@ -1,0 +1,14 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+
+.buttonClass {
+  border: none;
+  cursor: pointer;
+  border-radius: 100px;
+  font-weight: $font-bold;
+  font-family: "Montserrat", sans-serif;
+
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,210 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+@import "../../../../mixins.scss";
+@import "../../../../sizes.scss";
+
+.footer {
+  margin-top: 100px;
+  position: relative;
+  color: $blackDarkest;
+  border-top-left-radius: 47px;
+  background-color: $whiteFaded;
+  border-top-right-radius: 47px;
+
+  @include mobile {
+    margin-top: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+  }
+}
+
+.footerDotsStyle {
+  top: -60px;
+  left: 3px;
+  width: 127px;
+  position: absolute;
+  @include mobile {
+    display: none;
+  }
+}
+
+.footer1366Container {
+  margin: 0 auto;
+  max-width: 1366px;
+}
+
+.footerContainer {
+  display: flex;
+  height: 253px;
+  margin: 0 130px;
+  flex-direction: row;
+  flex-flow: wrap row;
+  padding: 47px 0 55px;
+  justify-content: space-between;
+
+  @include tablet {
+    margin: 0 100px;
+  }
+
+  @include mobile {
+    padding: 10px 0;
+    height: 230px;
+    margin: 22px 0 25px;
+    flex-direction: column;
+  }
+}
+
+.footerSections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+
+  @include mobile {
+    justify-content: space-evenly;
+  }
+}
+
+.footerLinksSection {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $blackDarkest;
+  height: 100%;
+}
+
+.footerHeading {
+  line-height: 2.5;
+  letter-spacing: 0.3px;
+  font-weight: $font-semi-bold;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 3.25;
+    letter-spacing: 0.24px;
+  }
+}
+
+.footerLinks {
+  outline: none;
+  color: $blackDarkest;
+  text-decoration: none;
+  letter-spacing: 0.28px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    font-size: 12px;
+    line-height: 1.85;
+    letter-spacing: 0.24px;
+  }
+}
+
+.subscribeClass {
+  align-items: flex-end;
+  flex: 0.9;
+
+  @include tablet {
+    flex: 0.8;
+  }
+
+  @include mobile {
+    align-items: center;
+  }
+}
+
+.footerContactSection {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: space-between;
+  color: $blackDarkest;
+  height: 100%;
+}
+
+.footerContactDetails {
+  display: flex;
+  outline: none;
+  align-items: center;
+  flex-direction: row;
+  color: $blackDarkest;
+  text-decoration: none;
+  letter-spacing: 0.28px;
+  font-size: responsive-font(14px);
+
+  @include mobile {
+    width: 130px;
+    font-size: 12px;
+    line-height: 1.85;
+    letter-spacing: 0.24px;
+  }
+}
+
+.footerContactIcons {
+  color: $yellow;
+}
+
+.footerContactDetails span {
+  margin-left: 10px;
+
+  @include mobile {
+    margin-left: 3px;
+  }
+}
+
+.footerCopyright {
+  height: 83px;
+  display: flex;
+  margin: 0 130px;
+  align-items: center;
+  flex-direction: row;
+  border-top: solid 2px $gray;
+  justify-content: space-between;
+
+  @include tablet {
+    margin: 0 100px;
+  }
+
+  @include mobile {
+    margin: 10px 20px 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.copyrightText {
+  line-height: 3.75;
+  color: $blackDarkest;
+  letter-spacing: 0.24px;
+  font-size: responsive-font(12px);
+
+  @include mobile {
+    line-height: 1;
+    font-size: 10px;
+    letter-spacing: 0.2px;
+  }
+}
+
+.footerSocial {
+  @include mobile {
+    margin-top: 10px;
+  }
+}
+
+.footerSocialTabs {
+  margin-right: 7px;
+}
+
+.footerSocialIcon {
+  width: 29px;
+  width: 29px;
+  transition: 0.25s ease-out;
+  &:hover {
+    height: 32px;
+    width: 32px;
+  }
+  @include mobile {
+    width: 27px;
+    width: 27px;
+  }
+}

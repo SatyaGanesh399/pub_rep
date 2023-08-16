@@ -1,0 +1,84 @@
+@import "../../../../color.scss";
+@import "../../../../font.scss";
+@import "../../../../mixins.scss";
+
+.accordionContainer {
+  color: $black;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+}
+
+.accordionBtn {
+  line-height: 2;
+  text-align: left;
+  position: relative;
+  letter-spacing: 0.3px;
+  padding: 0 !important;
+  background-color: transparent !important;
+  font-weight: $font-semi-bold !important;
+  font-size: responsive-font(15px);
+
+  &:hover {
+    color: $yellow;
+  }
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: 0.28px;
+  }
+}
+
+.accordionIcon {
+
+  width : 1em;
+  height : 1em;
+  top: 6px;
+  left: -20px;
+  position: absolute;
+  transition: transform 0.6s ease;
+
+  @include mobile {
+    top: 2px;
+    left: -20px;
+  }
+}
+
+.accordionIconRotate {
+  transform: rotate(90deg);
+}
+
+.accordionContent {
+  overflow: auto;
+  margin: -18px 0 0 0;
+  transition: max-height 0.6s ease;
+
+  @include mobile {
+    margin: 0 0 0 0;
+  }
+}
+
+.accordionContentHeight {
+  max-height: 150px;
+
+  @include mobile {
+    max-height: 200px;
+  }
+}
+
+.accordionContentHeightZero {
+  max-height: 0px;
+}
+
+.accordionText {
+  line-height: 1.8;
+  letter-spacing: 0.3px;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+    line-height: 1.43;
+    letter-spacing: 0.28px;
+  }
+}

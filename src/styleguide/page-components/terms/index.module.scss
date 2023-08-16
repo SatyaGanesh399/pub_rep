@@ -1,0 +1,62 @@
+@import "../../../../font.scss";
+@import "../../../../color.scss";
+@import "../../../../mixins.scss";
+
+.termsContainer {
+  display: flex;
+  padding: 0 140px;
+  max-width: 1366px;
+  margin: 0 auto 50px;
+  flex-direction: column;
+
+  @include tablet {
+    padding: 0 60px;
+  }
+
+  @include mobile {
+    padding: 0 30px 0 30px;
+  }
+}
+
+.termsHeading {
+  @include underlineHeading(100px);
+  letter-spacing: 0.46px;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(23px);
+
+  @include mobile {
+    font-size: 17px;
+  }
+}
+
+.termsSubHeading {
+  line-height: 1.75;
+  letter-spacing: 0.46px;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.termsContentHeading {
+  line-height: 2.88;
+  letter-spacing: 0.32px;
+  font-weight: $font-bold;
+  font-size: responsive-font(16px);
+
+  @include mobile {
+    font-size: 15px;
+  }
+}
+
+.termsContentHeading li {
+  line-height: 1.75;
+  letter-spacing: 0.32px;
+  font-weight: $font-regular;
+  font-size: responsive-font(15px);
+
+  @include mobile {
+    font-size: 14px;
+  }
+}

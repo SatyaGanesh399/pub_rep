@@ -1,0 +1,136 @@
+{
+  "title": "Game Development",
+  "titleImg": "career_gamedevelopment.svg",
+  "titleText": "Are you passionate about video games? If yes, then why not turn the passion into the earning source. Making games is a creative and technical art form. There are many components while creating a game such as Story, Characters, Audio, Art, Lighting, etc. that eventually merge to create a whole new world in a video game. One takes his/her idea for a game and works until they have a full-fledged game.",
+  "description": "The game developing is a tempting career option for developers and video game enthusiasts. Game developers spend their majority time programming as it is the key to developing the game. For this process, developers put their math, computer, or creative art skills together to get the best results. Developers can either work for a firm or can even do an independent business.",
+  "skills": [
+    {
+      "title": "Coding",
+      "text": "Knowledge of software design and programming is necessary for succeeding as a game developer."
+    },
+    {
+      "title": "Creativity",
+      "text": "Original ideas make original games which is what the competitive virtual wants as the trends change at the speed of thunderbolt."
+    },
+    {
+      "title": "Problem Solving",
+      "text": "Developing the programmes comes with the regular problem of a technical glitch which can be intimidating. Problem-solving skills helps to resolve the problem and helps to develop the final product."
+    },
+    {
+      "title": "Time Management",
+      "text": "While developing games there are technical and artistic challenges which can easily distract one from the time. But along with challenges, there are deadlines for the projects."
+    },
+    {
+      "title": "Design Thinking",
+      "text": "It is essential for a game developer to be familiar with design orientation and basic design skills for aesthetic composition of games."
+    },
+    {
+      "title": "Communication Skills",
+      "text": "These soft skills are required for communicating vision and ideas to other project team members like visual artists, producers, music and sound effects specialists, and marketers."
+    }
+  ],
+  "options": {
+    "types": ["Science", "Commerce", "Humanities"],
+    "school": [
+      "Any Subject Combination",
+      "Any Subject Combination with mathematics",
+      "Any Subject Combination"
+    ],
+    "graduation": [
+      "Bachelors in Graphic Designing/Animation, B.Tech. in Computer Science Engineering, B.Sc. Computer Science, Bachelors of Computer Applications (BCA)",
+      "Bachelors in Graphic Designing/Animation, B.Sc. Computer Science, Bachelors of Computer Applications (BCA)",
+      "Bachelors in Graphic Designing/Animation, Bachelors of Computer Applications (BCA)"
+    ],
+    "post": [
+      "Masters in Graphic Designing/ Animation, Diploma in Game Design, M. Tech in Computer Science Engineering, M.Sc. Computer Science, Masters of Computer Application (MCA)",
+      "Masters in Graphic Designing/ Animation, Diploma in Game Design, M.Sc. Computer Science, Masters of Computer Application (MCA)",
+      "Masters in Graphic Designing/ Animation, Diploma in Game Design, Masters of Computer Application (MCA)"
+    ]
+  },
+  "job": [
+    {
+      "title": "Game Developer",
+      "text": "They are software engineers, programmers, or computer scientists who primarily develop codebases for video games or related software, such as game development tools."
+    },
+    {
+      "title": "Game Tester",
+      "text": "“QA tester” is the official title of the position. Their work is to root out any code that doesn’t work."
+    },
+    {
+      "title": "Audio & Sound engineer",
+      "text": "They give sound to the game which makes it more interactive and interesting."
+    }
+  ],
+  "personalities": [
+    {
+      "title": "Hideo Kojima",
+      "text": "He got started with Konami in 1986 while working on the very first Metal Gear."
+    },
+    {
+      "title": "Sid Meier",
+      "text": " He is the founding father of American computer games. His titles include Sid Meier’s Pirates, Civilization, Colonization, and Railroad Tycoon."
+    },
+    {
+      "title": "Gabe Newell",
+      "text": "He left his Microsoft job and became director of Valve Corporation. Newell’s company is famous for cultivating games like Portal, Counter-Strike, Day of Defeat, Left 4 Dead, and more."
+    },
+    {
+      "title": "Shigeru Miyamoto",
+      "text": "He is the most innovative and influential game designer of all time. He developed Mario Bros., The Legend of Zelda, Star Fox, Mario Kart, and F-Zero, etc."
+    }
+  ],
+  "institute": [
+    {
+      "name": "Indian Institute of Technology",
+      "link": "https://home.iitd.ac.in/",
+      "location": "Multlple Locations"
+    },
+    {
+      "name": "Netaji Subhas Institute of Technology",
+      "link": "http://www.nsit.ac.in/",
+      "location": "New Delhi"
+    },
+    {
+      "name": "Birla Institute of Technology and Science",
+      "link": "https://www.bits-pilani.ac.in/",
+      "location": "Pilani"
+    },
+    {
+      "name": "Delhi Technological University",
+      "link": "http://www.dtu.ac.in/",
+      "location": "New Delhi"
+    },
+    {
+      "name": "Vellore Institute of Technology",
+      "link": "https://vit.ac.in/",
+      "location": "Vellore"
+    },
+    {
+      "name": "Indraprastha Institute of Information Technology",
+      "link": "https://www.iiitd.ac.in/",
+      "location": "New Delhi"
+    },
+    {
+      "name": "Punjab Engineering College",
+      "link": "https://www.pec.ac.in/",
+      "location": "Punjab"
+    },
+    {
+      "name": "University of Petroleum and Energy Studies",
+      "link": "https://www.upes.ac.in/",
+      "location": "Dehradun"
+    }
+  ],
+  "pros": [
+    "There is job satisfaction as passionate individuals get to develop their own games.",
+    "The work environment is casual which gives space to creative individuals.",
+    "Individuals get paid to play games. Although developing games takes a lot of input at the end of the day individuals are there for their passion for games.",
+    "It is individuals do not have to be confined in cubicles to do work. They can work from home or any place they feel comfortable."
+  ],
+  "cons": [
+    "It may seem easy but it is a difficult job as one constantly has to look for glitches and feedback to improve the game.",
+    "There are tight deadlines and a lot to do which puts pressure on the people.",
+    "Individuals have health concerns as their work is bound to the chair and involves a lot of sitting and very less physical activity.",
+    "There is intense competition in the industry which makes it difficult to survive."
+  ]
+}
